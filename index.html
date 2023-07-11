@@ -3,9 +3,119 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <!-- BOOTSTRAP 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- STYLE CSS -->
+  <link rel="stylesheet" href="./style.css">
+  <title>AnimeConnect</title>
 </head>
 <body>
+  <!-- HEADER -->
+  <header class="d-flex justify-content-center align-items-center">
+    <div>
+      <nav class="navbar navbar-expand-lg">
+        <!-- WEBSITE LOGO -->
+        <a href="./index.html" class="navbar-brand text-decoration-none text-uppercase text-light me-5" id="logo">
+          Logo
+        </a>  
+        <!-- NAVIGATION BURGER ICON -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span><i class="fa-solid fa-bars" style="color: #ffffff;"></i></span>
+        </button>
+
+        <!-- NAVIGATION MENU -->
+        <div class="collapse navbar-collapse justify-content-start" >
+          <ul class="navbar-nav gap-4" id="navmenu-wrapper">
+            <li class="nav-item" id="nav-item"><a href="./index.html" class="nav-link text-uppercase" id="nav-link"><span id="nav-title">Home</span></a></li>
+            <li class="nav-item" id="nav-item"><a href="#" class="nav-link text-uppercase" id="nav-link"><span id="nav-title">Anime List</span></a></li>
+            <li class="nav-item" id="nav-item"><a href="#" class="nav-link text-uppercase" id="nav-link"><span id="nav-title">Release Schedule</span></a></li>
+          </ul>
+        </div>
+        
+        <!-- SEARCH BAR -->
+        <div class="bg-light" id="search-content" >
+          <form action="/search" class="d-flex">
+            <input class="form-control search-input" type="search" id="search-bar" placeholder="Search anime..." aria-label="Search">
+            <button type="submit" class="btn btn-light" id="search-icon-btn"><i class="fa-solid fa-magnifying-glass text-dark"></i></button>
+            <a href="#anime-list-page" class="text-uppercase text-light text-decoration-none" id="filter-btn">Filter</a>
+          </form>
+        </div>
+      </nav>
+    </div>     
+  </header>
+
+  <main>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus perspiciatis aliquid, atque laboriosam corporis error at iusto hic fuga asperiores repellendus reprehenderit facere minus, laudantium recusandae cum! Quibusdam, autem veniam?
+    Optio soluta numquam, similique quaerat odit ipsum temporibus? Provident nostrum ratione maxime voluptatem deserunt quos laborum iure facilis, numquam cumque totam. Dolor obcaecati excepturi quos quasi eos cum voluptatem quae!
+    Ab eos, labore dolorem deleniti, vel natus corrupti architecto iure animi repudiandae mollitia. Libero commodi assumenda dolor sunt velit natus nesciunt quasi recusandae explicabo, inventore voluptate ipsum ipsa illo. Modi!
+    Saepe placeat nobis harum aut totam cum fugit aliquid nam, iusto facilis odit dicta ratione, excepturi quidem ab deserunt cupiditate possimus vel similique dolorem sapiente praesentium odio. Corporis, laboriosam pariatur.
+    Et libero dignissimos laborum. Velit ipsum culpa dignissimos recusandae quisquam pariatur excepturi officia nisi alias doloremque optio, quam maxime reiciendis facilis labore sint consequatur quod, ab eum animi, similique fugit.
+    Vero blanditiis necessitatibus libero voluptatibus facere, iure distinctio eum delectus tempora modi reprehenderit suscipit quam quasi ipsam dolorem sunt unde exercitationem, architecto vitae saepe reiciendis natus eaque! Iure, sequi veritatis.
+    Aliquam asperiores itaque fugiat aspernatur dolore quod, deleniti repellat odio, id aut temporibus laudantium? Atque sequi vel exercitationem delectus quod modi consequuntur, obcaecati, aut eum esse cupiditate. Aut, recusandae reprehenderit!
+    Et dolore reprehenderit sit quo amet cum atque quos, odit molestias vitae in. Voluptatum vero, impedit beatae fugiat optio sit, exercitationem praesentium repellat similique amet rerum dignissimos quis minus excepturi.
+    Aliquam maiores minima dolorum expedita dolores accusantium facere laudantium, explicabo eaque ex! Explicabo harum exercitationem libero nobis fuga ratione sunt assumenda atque ex labore! Dolore velit quis ab facilis amet.
+    Harum itaque tempore cum maxime neque blanditiis suscipit excepturi cupiditate? At corrupti debitis nulla numquam esse. Consequatur officia vel quisquam amet odio commodi. Odit magnam est nulla officiis nam ducimus!
+    Non quia ad ut laborum, obcaecati laudantium accusamus, corrupti quos repellendus nam sed, distinctio tempore commodi. Unde aspernatur qui sunt pariatur. Repellendus fuga excepturi voluptas quibusdam blanditiis explicabo laboriosam inventore.
+    Dignissimos earum accusamus molestias rerum suscipit error accusantium tempore eligendi id quis? Tenetur vero, expedita tempora maxime a alias ipsam! Sint voluptatem sed officia nemo animi qui impedit ut perferendis?
+    Cupiditate at sunt possimus, quidem voluptatem laudantium vel fugiat atque, repudiandae dicta neque amet enim, nisi iusto eum. Quod, repellendus dolor! Laudantium praesentium, officia nam quidem esse incidunt dolor veritatis!
+    Aut, nemo maxime. Temporibus veritatis error rem veniam! Tempore facere natus quam. Odio similique maiores nobis, molestiae voluptate tempora consequatur in facere, autem aut eaque eveniet beatae, placeat suscipit omnis!
+    Totam inventore fuga eum maiores officiis doloremque, vero amet tenetur deleniti deserunt ipsum nostrum, sunt possimus! Facere molestias corporis eum omnis fugit, sapiente id reprehenderit voluptas aperiam, ea nobis rerum!
+    Esse culpa repellendus, aut saepe nobis laudantium atque quod incidunt praesentium velit molestiae, minima distinctio tenetur, quos neque quasi dicta odio dignissimos. Harum eaque debitis voluptas consequatur aliquam, tempora voluptates.
+    Excepturi ea consequuntur blanditiis fuga. Sed fuga dolor ad. Quos natus sapiente expedita deserunt possimus vel accusamus voluptate doloremque esse? Sit veritatis ipsa, nesciunt reiciendis earum velit perferendis architecto eligendi?
+    Itaque cumque error eius iure sunt, blanditiis quasi, eligendi exercitationem minima alias omnis corporis commodi maxime. Recusandae assumenda, veritatis esse eaque impedit ullam perspiciatis temporibus eum sit quam, alias omnis!
+    Sunt hic dignissimos voluptas perferendis! Quaerat quas aliquid itaque consequuntur architecto quae nesciunt eaque id aliquam. Ab facilis numquam velit perspiciatis dolorum quas dolorem neque tempora, itaque delectus nesciunt impedit?
+    Eaque culpa labore voluptatibus quos esse aliquam. Ad quidem doloribus facere illum vitae temporibus ut voluptatum, possimus quam atque voluptatem nulla a, at sequi ipsum commodi, in ullam! Molestias, nisi!</p>
+  </main>
+
+  <footer>
+    <div class="d-flex flex-column align-items-center mt-5 mb-3" id="footer-wrapper">
+      <div class="d-flex">
+        <p class="my-0">&copy; 2023 AnimeConnect</p>
+        <p class="my-0 mx-3">|</p> 
+        <p class="my-0">All Rights Reserved</p>
+      </div>
+
+      <!-- USED API LINK -->
+      <p class="my-1">Used API: <a href="https://jikan.moe/" class="ms-2" id="api-link" target="_blank">Jikan REST API</a></p>        
+      
+      <!-- DEVELOPER'S NAMES -->
+      <p class="mb-1">Develop by:</p>
+      <div class="d-flex">
+        <p class="my-0 me-3 col-6">John Ernelle Alba</p>
+        <p class="my-0 col-1">|</p> 
+        <p class="my-0 ms-3 col-5">Ederick Bañez</p>
+      </div>
+
+      <!-- DEVELOPER'S LINKS -->
+      <div class="d-flex mt-2">
+        <div class="me-3 col-6">
+          <a href="https://github.com/ErnelleAlba" id="github-icon" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a>
+          <a href="https://www.linkedin.com/in/john-ernelle-alba-20509527a/" id="linkedin-icon" target="_blank"><i class="fa-brands fa-linkedin fa-xl ms-3"></i></a>
+        </div>
+        <p class="my-0 col-1">|</p> 
+        <div class="ms-3 col-5">
+          <a href="https://github.com/ESBanez" id="github-icon" target="_blank"><i class="fa-brands fa-github fa-xl""></i></a>
+          <a href="" id="linkedin-icon" target="_blank"><i class="fa-brands fa-linkedin fa-xl ms-3"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
   
+  <!-- HEADER ON SCROLL SCRIPT -->
+  <script type="text/javascript">
+    document.addEventListener('scroll', () =>{
+      const header = document.querySelector('header');
+      if (window.scrollY > 0) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+
+      };
+    });
+  </script>
+  <!-- BOOTSTRAP 5 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
 </body>
 </html>
