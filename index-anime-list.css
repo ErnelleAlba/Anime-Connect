@@ -19,6 +19,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+/**********Media Query ***********/
 
 body {
       background: #242428;
@@ -106,7 +107,7 @@ body {
     #filter-btn:hover {
       opacity: 0.8;
     }
-
+    /******S O R T   M E N U********/     
     .sortMenu {
       padding: 1rem;
     }
@@ -125,6 +126,20 @@ body {
     #Filtering {
       display: flex;
       justify-content: space-between;
+    }
+    
+    /******C A R D********/
+    .card-img-top {
+      width: 70%; /* Adjust the width as desired */
+      height: auto; /* Maintain aspect ratio */
+    }
+    .card {
+      background-color: black;
+      width: 14 rem;
+    }
+    
+    #card-list {
+      
     }
 
 /* FOOTER */
