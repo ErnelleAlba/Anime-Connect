@@ -47,26 +47,87 @@
   </header>
 
   <main>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus perspiciatis aliquid, atque laboriosam corporis error at iusto hic fuga asperiores repellendus reprehenderit facere minus, laudantium recusandae cum! Quibusdam, autem veniam?
-    Optio soluta numquam, similique quaerat odit ipsum temporibus? Provident nostrum ratione maxime voluptatem deserunt quos laborum iure facilis, numquam cumque totam. Dolor obcaecati excepturi quos quasi eos cum voluptatem quae!
-    Ab eos, labore dolorem deleniti, vel natus corrupti architecto iure animi repudiandae mollitia. Libero commodi assumenda dolor sunt velit natus nesciunt quasi recusandae explicabo, inventore voluptate ipsum ipsa illo. Modi!
-    Saepe placeat nobis harum aut totam cum fugit aliquid nam, iusto facilis odit dicta ratione, excepturi quidem ab deserunt cupiditate possimus vel similique dolorem sapiente praesentium odio. Corporis, laboriosam pariatur.
-    Et libero dignissimos laborum. Velit ipsum culpa dignissimos recusandae quisquam pariatur excepturi officia nisi alias doloremque optio, quam maxime reiciendis facilis labore sint consequatur quod, ab eum animi, similique fugit.
-    Vero blanditiis necessitatibus libero voluptatibus facere, iure distinctio eum delectus tempora modi reprehenderit suscipit quam quasi ipsam dolorem sunt unde exercitationem, architecto vitae saepe reiciendis natus eaque! Iure, sequi veritatis.
-    Aliquam asperiores itaque fugiat aspernatur dolore quod, deleniti repellat odio, id aut temporibus laudantium? Atque sequi vel exercitationem delectus quod modi consequuntur, obcaecati, aut eum esse cupiditate. Aut, recusandae reprehenderit!
-    Et dolore reprehenderit sit quo amet cum atque quos, odit molestias vitae in. Voluptatum vero, impedit beatae fugiat optio sit, exercitationem praesentium repellat similique amet rerum dignissimos quis minus excepturi.
-    Aliquam maiores minima dolorum expedita dolores accusantium facere laudantium, explicabo eaque ex! Explicabo harum exercitationem libero nobis fuga ratione sunt assumenda atque ex labore! Dolore velit quis ab facilis amet.
-    Harum itaque tempore cum maxime neque blanditiis suscipit excepturi cupiditate? At corrupti debitis nulla numquam esse. Consequatur officia vel quisquam amet odio commodi. Odit magnam est nulla officiis nam ducimus!
-    Non quia ad ut laborum, obcaecati laudantium accusamus, corrupti quos repellendus nam sed, distinctio tempore commodi. Unde aspernatur qui sunt pariatur. Repellendus fuga excepturi voluptas quibusdam blanditiis explicabo laboriosam inventore.
-    Dignissimos earum accusamus molestias rerum suscipit error accusantium tempore eligendi id quis? Tenetur vero, expedita tempora maxime a alias ipsam! Sint voluptatem sed officia nemo animi qui impedit ut perferendis?
-    Cupiditate at sunt possimus, quidem voluptatem laudantium vel fugiat atque, repudiandae dicta neque amet enim, nisi iusto eum. Quod, repellendus dolor! Laudantium praesentium, officia nam quidem esse incidunt dolor veritatis!
-    Aut, nemo maxime. Temporibus veritatis error rem veniam! Tempore facere natus quam. Odio similique maiores nobis, molestiae voluptate tempora consequatur in facere, autem aut eaque eveniet beatae, placeat suscipit omnis!
-    Totam inventore fuga eum maiores officiis doloremque, vero amet tenetur deleniti deserunt ipsum nostrum, sunt possimus! Facere molestias corporis eum omnis fugit, sapiente id reprehenderit voluptas aperiam, ea nobis rerum!
-    Esse culpa repellendus, aut saepe nobis laudantium atque quod incidunt praesentium velit molestiae, minima distinctio tenetur, quos neque quasi dicta odio dignissimos. Harum eaque debitis voluptas consequatur aliquam, tempora voluptates.
-    Excepturi ea consequuntur blanditiis fuga. Sed fuga dolor ad. Quos natus sapiente expedita deserunt possimus vel accusamus voluptate doloremque esse? Sit veritatis ipsa, nesciunt reiciendis earum velit perferendis architecto eligendi?
-    Itaque cumque error eius iure sunt, blanditiis quasi, eligendi exercitationem minima alias omnis corporis commodi maxime. Recusandae assumenda, veritatis esse eaque impedit ullam perspiciatis temporibus eum sit quam, alias omnis!
-    Sunt hic dignissimos voluptas perferendis! Quaerat quas aliquid itaque consequuntur architecto quae nesciunt eaque id aliquam. Ab facilis numquam velit perspiciatis dolorum quas dolorem neque tempora, itaque delectus nesciunt impedit?
-    Eaque culpa labore voluptatibus quos esse aliquam. Ad quidem doloribus facere illum vitae temporibus ut voluptatum, possimus quam atque voluptatem nulla a, at sequi ipsum commodi, in ullam! Molestias, nisi!</p>
+    <nav class="mainFilter" style="padding: 1rem;">
+      <div class="container-fluid" style="background-color: red; display: flex; justify-content: baseline; padding: 1rem;">
+        Home 
+        <ul>
+          <li>Filter</li> 
+        </ul>
+      </div>
+      <div class="d-flex justify-content-center"> <!-- Added the "d-flex" class -->
+        <div class="col-10" style="background-color: rgb(58, 58, 62); height: auto; padding: 1rem;">
+          <div style="background-color: rgb(81, 72, 61); height: auto;" class="border-0 ">
+            <p>filter</p>
+            <div style="display: flex; justify-content: space-around;">
+
+              <div class="dropdown dropdown-menu-end">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                  Type
+                  <span placeholder="Series"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Manga</a></li>
+                  <li><a class="dropdown-item" href="#">Series</a></li>
+                  <li><a class="dropdown-item" href="#">Magazine</a></li>
+                </ul>
+              </div>
+
+              <div class="dropdown dropdown-menu-end">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                  Status
+                  <span placeholder="Series"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Manga</a></li>
+                  <li><a class="dropdown-item" href="#">Series</a></li>
+                  <li><a class="dropdown-item" href="#">Magazine</a></li>
+                </ul>
+              </div>
+
+              <div class="dropdown dropdown-menu-end">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                  Rated
+                  <span placeholder="Series"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Manga</a></li>
+                  <li><a class="dropdown-item" href="#">Series</a></li>
+                  <li><a class="dropdown-item" href="#">Magazine</a></li>
+                </ul>
+              </div>
+
+              <div class="dropdown dropdown-menu-end">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                  Season
+                  <span placeholder="Series"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Manga</a></li>
+                  <li><a class="dropdown-item" href="#">Series</a></li>
+                  <li><a class="dropdown-item" href="#">Magazine</a></li>
+                </ul>
+              </di>
+            
+              <div class="dropdown dropdown-menu-end">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                  Start date year
+                  <span placeholder="Series"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Manga</a></li>
+                  <li><a class="dropdown-item" href="#">Series</a></li>
+                  <li><a class="dropdown-item" href="#">Magazine</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <br><br>
+    <section>
+      
+    </section>
   </main>
 
   <footer>
