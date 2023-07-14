@@ -47,21 +47,19 @@
   </header>
 
   <main>
-    <nav class="mainFilter" style="padding: 1rem;">
-      <div class="container-fluid" style="background-color: red; display: flex; justify-content: baseline; padding: 1rem;">
+    <nav class="mainFilter container" style="padding: 1rem;">
+      <div class="container" style="background-color: red; display: flex; justify-content: baseline; padding: 1rem;">
         Home 
         <ul>
           <li>Filter</li> 
         </ul>
       </div>
-      <div class="d-flex justify-content-center"> <!-- Added the "d-flex" class -->
-        <div class="col-10" style="background-color: rgb(58, 58, 62); height: auto; padding: 1rem;">
+      <div class="d-flex justify-content-center">
+        <div class="col-12" style="background-color: rgb(58, 58, 62); height: auto; padding: 1rem;">
           <div style="background-color: rgb(81, 72, 61); height: auto;" class="border-0 ">
-            <p>filter</p>
             <div style="display: flex; justify-content: space-around;">
-
               <div class="dropdown dropdown-menu-end">
-                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                <button type="button" class="btn btn-outline-light dropdown-toggle" data-bs-toggle="dropdown">
                   Type
                   <span placeholder="Series"></span>
                 </button>
@@ -73,7 +71,7 @@
               </div>
 
               <div class="dropdown dropdown-menu-end">
-                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                <button type="button" class="btn btn-outline-light dropdown-toggle" data-bs-toggle="dropdown">
                   Status
                   <span placeholder="Series"></span>
                 </button>
@@ -85,7 +83,7 @@
               </div>
 
               <div class="dropdown dropdown-menu-end">
-                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                <button type="button" class="btn btn-outline-light dropdown-toggle" data-bs-toggle="dropdown">
                   Rated
                   <span placeholder="Series"></span>
                 </button>
@@ -97,7 +95,7 @@
               </div>
 
               <div class="dropdown dropdown-menu-end">
-                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                <button type="button" class="btn btn-outline-light dropdown-toggle" data-bs-toggle="dropdown">
                   Season
                   <span placeholder="Series"></span>
                 </button>
@@ -106,10 +104,11 @@
                   <li><a class="dropdown-item" href="#">Series</a></li>
                   <li><a class="dropdown-item" href="#">Magazine</a></li>
                 </ul>
-              </di>
+              </div>
             
+              
               <div class="dropdown dropdown-menu-end">
-                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                <button type="button" class="btn btn-outline-light dropdown-toggle" data-bs-toggle="dropdown">
                   Start date year
                   <span placeholder="Series"></span>
                 </button>
@@ -119,7 +118,20 @@
                   <li><a class="dropdown-item" href="#">Magazine</a></li>
                 </ul>
               </div>
+
+              <div class="dropdown dropdown-menu-end">
+                <button type="button" class="btn btn-outline-light dropdown-toggle" data-bs-toggle="dropdown">
+                  Sort
+                  <span placeholder="Series"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Manga</a></li>
+                  <li><a class="dropdown-item" href="#">Series</a></li>
+                  <li><a class="dropdown-item" href="#">Magazine</a></li>
+                </ul>
+              </div>
             </div>
+            <a href="#"><button type="button" class="btn btn-warning">Filter</button></a>
           </div>
         </div>
       </div>
