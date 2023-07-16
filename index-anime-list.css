@@ -107,6 +107,11 @@ body {
     #filter-btn:hover {
       opacity: 0.8;
     }
+    /***********F I L T E R - R E S U L T************/
+    #Filtering {
+      color: #ffdd95;
+      font-size: larger;
+    }
     /******S O R T   M E N U********/     
     .sortMenu {
       padding: 1rem;
@@ -118,28 +123,57 @@ body {
       justify-content: baseline;
       padding: 1rem;
     }
-    section {
-      background-color: #ffdd95;
-      width: 100%;
-      height: 30rem;
-    }
+    
     #Filtering {
       display: flex;
       justify-content: space-between;
     }
     
     /******C A R D********/
-    .card-img-top {
-      width: 70%; /* Adjust the width as desired */
-      height: auto; /* Maintain aspect ratio */
-    }
-    .card {
-      background-color: black;
-      width: 14 rem;
+    .anime-card-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px; /* Adjust the gap as needed */
     }
     
-    #card-list {
-      
+    .anime-card {
+      width: 200px; /* Adjust the width as needed */
+      background-color: rgba(24, 24, 28, 0.8);
+      color: rgb(243, 232, 232);
+      padding: 10px;
+      border-radius: 8px;
+      text-decoration: #ffdd95;
+    }
+
+    section {
+      width: 100%;
+      height: auto;
+    }
+
+    .card-img-top {
+      height: 18rem;
+      object-fit: cover;
+    }
+    .anime-card {
+      background-color: #060606; /* Set your desired background color here */
+    }
+    .anime-card .card-title {
+      position: relative; /* Ensure the image is positioned relative to its parent */
+      color: rgb(24, 24, 28);
+      font-size: 0.9rem;  
+      white-space: nowrap; /* Prevent the text from wrapping to the next line */
+      overflow: hidden; /* Hide any overflowing text */
+      text-overflow: ellipsis; /* Display an ellipsis (...) when the title is truncated */
+
+    }
+    .anime-card .card-img-top::after {
+      content: ''; /* Create a pseudo-element to serve as the gradient overlay */
+      position: absolute; /* Position the pseudo-element on top of the image */
+      bottom: 0; /* Place it at the bottom of the image */
+      left: 0; /* Stretch the pseudo-element to cover the entire image */
+      width: 100%;
+      height: 50%; /* Adjust the height of the blur effect as needed */
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)); /* Set the gradient colors and direction */
     }
 
 /* FOOTER */
