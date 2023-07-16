@@ -17,7 +17,7 @@
     <div>
       <nav class="navbar navbar-expand-lg">
         <!-- WEBSITE LOGO -->
-        <a href="./index.html" class="navbar-brand text-decoration-none text-uppercase text-light me-5" id="logo">
+        <a href="./index.html" class="navbar-brand  me-5" id="logo">
           <img src="./multimedia/anime-connect-logo.png">
         </a>  
         <!-- NAVIGATION BURGER ICON -->
@@ -47,26 +47,140 @@
   </header>
 
   <main>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus perspiciatis aliquid, atque laboriosam corporis error at iusto hic fuga asperiores repellendus reprehenderit facere minus, laudantium recusandae cum! Quibusdam, autem veniam?
-    Optio soluta numquam, similique quaerat odit ipsum temporibus? Provident nostrum ratione maxime voluptatem deserunt quos laborum iure facilis, numquam cumque totam. Dolor obcaecati excepturi quos quasi eos cum voluptatem quae!
-    Ab eos, labore dolorem deleniti, vel natus corrupti architecto iure animi repudiandae mollitia. Libero commodi assumenda dolor sunt velit natus nesciunt quasi recusandae explicabo, inventore voluptate ipsum ipsa illo. Modi!
-    Saepe placeat nobis harum aut totam cum fugit aliquid nam, iusto facilis odit dicta ratione, excepturi quidem ab deserunt cupiditate possimus vel similique dolorem sapiente praesentium odio. Corporis, laboriosam pariatur.
-    Et libero dignissimos laborum. Velit ipsum culpa dignissimos recusandae quisquam pariatur excepturi officia nisi alias doloremque optio, quam maxime reiciendis facilis labore sint consequatur quod, ab eum animi, similique fugit.
-    Vero blanditiis necessitatibus libero voluptatibus facere, iure distinctio eum delectus tempora modi reprehenderit suscipit quam quasi ipsam dolorem sunt unde exercitationem, architecto vitae saepe reiciendis natus eaque! Iure, sequi veritatis.
-    Aliquam asperiores itaque fugiat aspernatur dolore quod, deleniti repellat odio, id aut temporibus laudantium? Atque sequi vel exercitationem delectus quod modi consequuntur, obcaecati, aut eum esse cupiditate. Aut, recusandae reprehenderit!
-    Et dolore reprehenderit sit quo amet cum atque quos, odit molestias vitae in. Voluptatum vero, impedit beatae fugiat optio sit, exercitationem praesentium repellat similique amet rerum dignissimos quis minus excepturi.
-    Aliquam maiores minima dolorum expedita dolores accusantium facere laudantium, explicabo eaque ex! Explicabo harum exercitationem libero nobis fuga ratione sunt assumenda atque ex labore! Dolore velit quis ab facilis amet.
-    Harum itaque tempore cum maxime neque blanditiis suscipit excepturi cupiditate? At corrupti debitis nulla numquam esse. Consequatur officia vel quisquam amet odio commodi. Odit magnam est nulla officiis nam ducimus!
-    Non quia ad ut laborum, obcaecati laudantium accusamus, corrupti quos repellendus nam sed, distinctio tempore commodi. Unde aspernatur qui sunt pariatur. Repellendus fuga excepturi voluptas quibusdam blanditiis explicabo laboriosam inventore.
-    Dignissimos earum accusamus molestias rerum suscipit error accusantium tempore eligendi id quis? Tenetur vero, expedita tempora maxime a alias ipsam! Sint voluptatem sed officia nemo animi qui impedit ut perferendis?
-    Cupiditate at sunt possimus, quidem voluptatem laudantium vel fugiat atque, repudiandae dicta neque amet enim, nisi iusto eum. Quod, repellendus dolor! Laudantium praesentium, officia nam quidem esse incidunt dolor veritatis!
-    Aut, nemo maxime. Temporibus veritatis error rem veniam! Tempore facere natus quam. Odio similique maiores nobis, molestiae voluptate tempora consequatur in facere, autem aut eaque eveniet beatae, placeat suscipit omnis!
-    Totam inventore fuga eum maiores officiis doloremque, vero amet tenetur deleniti deserunt ipsum nostrum, sunt possimus! Facere molestias corporis eum omnis fugit, sapiente id reprehenderit voluptas aperiam, ea nobis rerum!
-    Esse culpa repellendus, aut saepe nobis laudantium atque quod incidunt praesentium velit molestiae, minima distinctio tenetur, quos neque quasi dicta odio dignissimos. Harum eaque debitis voluptas consequatur aliquam, tempora voluptates.
-    Excepturi ea consequuntur blanditiis fuga. Sed fuga dolor ad. Quos natus sapiente expedita deserunt possimus vel accusamus voluptate doloremque esse? Sit veritatis ipsa, nesciunt reiciendis earum velit perferendis architecto eligendi?
-    Itaque cumque error eius iure sunt, blanditiis quasi, eligendi exercitationem minima alias omnis corporis commodi maxime. Recusandae assumenda, veritatis esse eaque impedit ullam perspiciatis temporibus eum sit quam, alias omnis!
-    Sunt hic dignissimos voluptas perferendis! Quaerat quas aliquid itaque consequuntur architecto quae nesciunt eaque id aliquam. Ab facilis numquam velit perspiciatis dolorum quas dolorem neque tempora, itaque delectus nesciunt impedit?
-    Eaque culpa labore voluptatibus quos esse aliquam. Ad quidem doloribus facere illum vitae temporibus ut voluptatum, possimus quam atque voluptatem nulla a, at sequi ipsum commodi, in ullam! Molestias, nisi!</p>
+    <div id="carouselInterval" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators d-flex d-xl-none flex-column" id="carousel-indicators">
+        <button type="button" data-bs-target="#carouselInterval" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselInterval" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselInterval" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000" id="carousel-item">
+          <div class="carousel-cover">
+            <div class="d-grid carousel-cover-img">
+              <img src="https://cdn.myanimelist.net/images/anime/1695/111486l.webp" class="d-block d-md-none w-50 c-img" alt="hero-banner-1">
+              <img src="https://cdn.myanimelist.net/images/anime/1695/111486l.webp" class="d-none d-md-block w-50 c-md-img" alt="hero-banner-1">
+            </div>
+          </div>
+
+          <div class="carousel-caption d-flex flex-column justify-content-end"  id="carousel-text">
+            <div id="carousel-sub-text">#1 Popular</div>
+            <div id="carousel-title">Horimiya</div>
+            <div class="gap-4 d-none d-xl-flex " id="carousel-detail">
+              <div>
+                <i class="fas fa-play-circle me-1"></i>TV
+              </div>
+              <div>
+                <i class="fas fa-clock me-1"></i>23m
+              </div>
+              <div>
+                <i class="fas fa-calendar me-1"></i>Jan 10, 2021 to Apr 4, 2021
+              </div>                         
+            </div>
+            <div id="carousel-description-section" class="w-50 d-none d-xl-block">
+              <div id="carousel-description">
+                On the surface, the thought of Kyouko Hori and Izumi Miyamura getting along would be the last thing in people's minds. After all, Hori has a perfect combination of beauty and brains, while Miyamura appears meek and distant to his fellow classmates. However, a fateful meeting between the two lays both of their hidden selves bare. Even though she is popular at school, Hori has little time to socialize with her friends due to housework. On the other hand, Miyamura lives under the noses of his peers, his body bearing secret tattoos and piercings that make him look like a gentle delinquent.
+  
+                Having opposite personalities yet sharing odd similarities, the two quickly become friends and often spend time together in Hori's home. As they both emerge from their shells, they share with each other a side of themselves concealed from the outside world.
+  
+                [Written by MAL Rewrite]
+              </div>
+            </div>            
+            <div id="carousel-btn">
+              <a href="#" id="detail-btn">Detail
+                <i class="fas fa-angle-right ml-2"></i>
+              </a>
+          </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="10000" id="carousel-item">
+          <div class="carousel-cover">
+            <div class="d-grid carousel-cover-img">
+              <img src="https://cdn.myanimelist.net/images/anime/1600/134703l.webp" class="d-block d-md-none w-50 c-img" alt="hero-banner-2">
+              <img src="https://cdn.myanimelist.net/images/anime/1600/134703l.webp" class="d-none d-md-block w-50 c-md-img" alt="hero-banner-2">
+            </div>
+          </div>
+
+          <div class="carousel-caption d-flex flex-column justify-content-end"  id="carousel-text">
+            <div id="carousel-sub-text">#2 Popular</div>
+            <div id="carousel-title">Jujutsu Kaisen 2nd Season</div>
+            <div class="gap-4 d-none d-xl-flex" id="carousel-detail">
+              <div>
+                <i class="fas fa-play-circle me-1"></i>TV
+              </div>
+              <div>
+                <i class="fas fa-clock me-1"></i>23m
+              </div>
+              <div>
+                <i class="fas fa-calendar me-1"></i>Jul 6, 2023 to ?
+              </div>                         
+            </div>
+            <div id="carousel-description-section" class="w-50 d-none d-xl-block">
+              <div id="carousel-description">
+                On the surface, the thought of Kyouko Hori and Izumi Miyamura getting along would be the last thing in people's minds. After all, Hori has a perfect combination of beauty and brains, while Miyamura appears meek and distant to his fellow classmates. However, a fateful meeting between the two lays both of their hidden selves bare. Even though she is popular at school, Hori has little time to socialize with her friends due to housework. On the other hand, Miyamura lives under the noses of his peers, his body bearing secret tattoos and piercings that make him look like a gentle delinquent.
+  
+                Having opposite personalities yet sharing odd similarities, the two quickly become friends and often spend time together in Hori's home. As they both emerge from their shells, they share with each other a side of themselves concealed from the outside world.
+  
+                [Written by MAL Rewrite]
+              </div>
+            </div>
+
+            <div id="carousel-btn">
+              <a href="#" id="detail-btn">Detail
+                <i class="fas fa-angle-right ml-2"></i>
+              </a>
+          </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="10000" id="carousel-item">
+          <div class="carousel-cover">
+            <div class="d-grid carousel-cover-img">
+              <img src="https://cdn.myanimelist.net/images/anime/1674/136728l.webp" class="d-block d-md-none w-50 c-img" alt="hero-banner-1">
+              <img src="https://cdn.myanimelist.net/images/anime/1674/136728l.webp" class="d-none d-md-block w-50 c-md-img" alt="hero-banner-1">
+            </div>
+          </div>
+
+          <div class="carousel-caption d-flex flex-column justify-content-end"  id="carousel-text">
+            <div id="carousel-sub-text">#3 Popular</div>
+            <div id="carousel-title">Mushoku Tensei II: Isekai Ittara Honki Dasu</div>
+            <div class="gap-4 d-none d-xl-flex  id="carousel-detail">
+              <div>
+                <i class="fas fa-play-circle me-1"></i>TV
+              </div>
+              <div>
+                <i class="fas fa-clock me-1"></i>23m
+              </div>
+              <div>
+                <i class="fas fa-calendar me-1"></i>Jul 10, 2023 to ?
+              </div>                         
+            </div>
+            <div id="carousel-description-section" class="w-50 d-none d-xl-block">
+              <div id="carousel-description">
+                On the surface, the thought of Kyouko Hori and Izumi Miyamura getting along would be the last thing in people's minds. After all, Hori has a perfect combination of beauty and brains, while Miyamura appears meek and distant to his fellow classmates. However, a fateful meeting between the two lays both of their hidden selves bare. Even though she is popular at school, Hori has little time to socialize with her friends due to housework. On the other hand, Miyamura lives under the noses of his peers, his body bearing secret tattoos and piercings that make him look like a gentle delinquent.
+  
+                Having opposite personalities yet sharing odd similarities, the two quickly become friends and often spend time together in Hori's home. As they both emerge from their shells, they share with each other a side of themselves concealed from the outside world.
+  
+                [Written by MAL Rewrite]
+              </div>
+            </div>
+
+            <div id="carousel-btn">
+              <a href="#" id="detail-btn">Detail
+                <i class="fas fa-angle-right ml-2"></i>
+              </a>
+          </div>
+          </div>
+        </div>
+      
+      </div>
+      <button class="carousel-control-prev d-none d-xl-block" type="button" data-bs-target="#carouselInterval" data-bs-slide="prev">
+        <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next d-none d-xl-block" type="button" data-bs-target="#carouselInterval" data-bs-slide="next">
+        <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>        
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
   </main>
 
   <footer>
