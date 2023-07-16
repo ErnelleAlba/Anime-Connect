@@ -10,6 +10,14 @@
       };
     });
   
+	fetch('https://api.jikan.moe/v4/anime')
+  .then((res) => {
+    if (res.ok) {
+      return res.json();
+    } else {
+      throw new Error('Network response was not OK.');
+    }
+  }).then((data) => {console.log(data);});
 
 	fetch('https://api.jikan.moe/v4/top/anime')
   .then((res) => {
