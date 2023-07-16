@@ -40,6 +40,12 @@
 			<div class="card-body">
 			  <h5 class="card-title">${anime.title_english}</h5>
 			  <!-- Add other anime information you want to display here -->
+			  <h6 class="Ratings">
+			  	Ratings: ${anime.score}
+				<ul>
+					<li>${anime.year}</li>
+				</ul>
+			  </h6>
 			</div>
 		  </div>
 		`;

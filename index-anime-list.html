@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="./index-anime-list.css">
   <title>Anime-list</title>
 </head>
-<body>
+<body class="wrapper d-flex flex-column">
   <!-- HEADER -->
   <header class="d-flex justify-content-center align-items-center">
     <div>
@@ -46,7 +46,7 @@
     </div>     
   </header>
 
-  <main>
+  <main class="flex-grow-1">
     <nav class="sortMenu container">
       <div class="container" id="sortHome">
         Home 
@@ -56,8 +56,8 @@
       </div>
       <!------------------- Drop down filter -------------->
       <div class="d-flex justify-content-center">
-        <div class="col-12" style="background-color: rgb(58, 58, 62); height: auto; padding: 1rem;">
-          <div style="background-color: rgb(81, 72, 61); height: auto;" class="border-0 ">
+        <div class="col-12" style="background-color: rgb(58, 58, 62); height: auto; padding: 1rem;" id="dropsdown">
+          <div style="background-color: transparent; height: auto;" class="border-0 ">
             <div style="display: flex; justify-content: space-around;">
               <div class="dropdown dropdown-menu-end">
                 <button type="button" class="btn btn-outline-light dropdown-toggle" data-bs-toggle="dropdown">
@@ -133,7 +133,7 @@
               </div>
             </div>
             <br>
-            <a href="#"><button type="button" class="btn btn-warning">Filter</button></a>
+            <a href="#"><button type="button" class="btn btn-warning custom-button">Filter</button></a>
           </div>
         </div>
       </div>
@@ -152,7 +152,6 @@
     </aside>
   </main>
   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   <footer>
     <div class="d-flex flex-column align-items-center mt-5 mb-3" id="footer-wrapper">

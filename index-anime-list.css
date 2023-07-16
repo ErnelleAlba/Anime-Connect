@@ -24,10 +24,15 @@
 body {
       background: #242428;
       color: #fff;
+      height: 100%;
+      margin: 0;  
     }
 
     main {
       height: 100vh;
+      flex-grow: 1;
+      margin-bottom: 80px; /* Adjust the margin as per your footer's height */
+
     }
 
     /* HEADER */
@@ -116,9 +121,11 @@ body {
     .sortMenu {
       padding: 1rem;
     }
-    
+    #dropsdown {
+      border-radius: 10px;
+    }
     #sortHome {
-      background-color: red;
+      background-color: transparent;
       display: flex;
       justify-content: baseline;
       padding: 1rem;
@@ -127,6 +134,10 @@ body {
     #Filtering {
       display: flex;
       justify-content: space-between;
+    }
+    .custom-button {
+      background-color: #ffdd95;
+      margin-left: 3.2rem;
     }
     
     /******C A R D********/
@@ -154,12 +165,16 @@ body {
       height: 18rem;
       object-fit: cover;
     }
-    .anime-card {
-      background-color: #060606; /* Set your desired background color here */
+    .anime-card .Ratings {
+      font-size: 0.8rem;
+      color: #757575;
+    }
+    .anime-card .card-body {
+      background-color: transparent; /* Set the background color of the padding to transparent */
     }
     .anime-card .card-title {
       position: relative; /* Ensure the image is positioned relative to its parent */
-      color: rgb(24, 24, 28);
+      color: rgb(232, 232, 240);
       font-size: 0.9rem;  
       white-space: nowrap; /* Prevent the text from wrapping to the next line */
       overflow: hidden; /* Hide any overflowing text */
@@ -176,6 +191,16 @@ body {
       background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)); /* Set the gradient colors and direction */
     }
 
+    .anime-card .card {
+      box-shadow: none; /* Remove the box-shadow */
+      border: none; /* Remove any border */
+      background-color: rgba(24, 24, 28, 0.8); /* Set the background color for the whole card */
+
+    }
+    .Ratings {
+      display: flex;
+    }
+
 /* FOOTER */
 #github-icon,
 #linkedin-icon,
@@ -187,4 +212,17 @@ body {
 #linkedin-icon:hover,
 #api-link:hover {
   color: var(--tc-yellow);
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+footer {
+  width: 100%;
+  height: 80px; /* Set the height of your footer here */
+  color: #fff; /* Change the text color of the footer */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
