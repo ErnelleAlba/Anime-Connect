@@ -13,40 +13,49 @@
 </head>
 <body>
   <!-- HEADER -->
-  <header class="d-flex justify-content-center align-items-center">
-    <div>
-      <nav class="navbar navbar-expand-lg">
-        <!-- WEBSITE LOGO -->
-        <a href="./index.html" class="navbar-brand  me-5" id="logo">
-          <img src="./multimedia/anime-connect-logo.png">
-        </a>  
-        <!-- NAVIGATION BURGER ICON -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span><i class="fa-solid fa-bars" style="color: #ffffff;"></i></span>
-        </button>
-
-        <!-- NAVIGATION MENU -->
-        <div class="collapse navbar-collapse justify-content-start" >
-          <ul class="navbar-nav gap-4" id="navmenu-wrapper">
-            <li class="nav-item" id="nav-item"><a href="./index.html" class="nav-link text-uppercase" id="nav-link"><span id="nav-title">Home</span></a></li>
-            <li class="nav-item" id="nav-item"><a href="#" class="nav-link text-uppercase" id="nav-link"><span id="nav-title">Anime List</span></a></li>
-            <li class="nav-item" id="nav-item"><a href="#" class="nav-link text-uppercase" id="nav-link"><span id="nav-title">Release Schedule</span></a></li>
+  <header class="d-flex justify-content-start">
+    <!-- SIDEBAR NAVIGATION MENU -->
+    <div class="navigation-menu">
+      <div id="sidebar-icon" class="px-5">
+        <div class="burger-menu" id="menu" onclick="show()">
+          <span id="top-line"></span>
+          <span id="mid-line"></span>
+          <span id="bot-line"></span>
+        </div>      
+      </div>
+      <nav class="sidebar-menu">
+        <div id="sidebar">
+          <h1 id="sidebar-header">Menu</h1>
+          <ul class="list-unstyled">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Anime List</a></li>
+            <li><a href="#">Most Popular</a></li>
+            <li><a href="#">Most Trending</a></li>
+            <li><a href="#">Release Schedule</a></li>
           </ul>
-        </div>
-        
-        <!-- SEARCH BAR -->
-        <div class="bg-light" id="search-content" >
-          <form action="/search" class="d-flex">
-            <input class="form-control search-input" type="search" id="search-bar" placeholder="Search anime..." aria-label="Search">
-            <button type="submit" class="btn btn-light" id="search-icon-btn"><i class="fa-solid fa-magnifying-glass text-dark"></i></button>
-            <a href="#anime-list-page" class="text-uppercase text-light text-decoration-none" id="filter-btn">Filter</a>
-          </form>
-        </div>
+        </div>               
       </nav>
-    </div>     
+      <div class="blur-bg"></div>   
+    </div>
+
+    <!-- WEBSITE LOGO -->
+    <div>
+      <a href="./index.html" class="navbar-brand me-5" id="website-logo">
+        <img src="./multimedia/anime-connect-logo.png" alt="AnimeConnect-logo">
+      </a>  
+    </div>        
+    <!-- SEARCH BAR -->
+    <div class="bg-light d-none d-xl-block" id="search-content">
+      <form action="/search" class="d-flex">
+        <input class="form-control search-input" type="search" id="search-bar" placeholder="Search anime..." aria-label="Search">
+          <button type="submit" class="btn btn-light" id="search-icon-btn"><i class="fa-solid fa-magnifying-glass text-dark"></i></button>
+          <a href="#anime-list-page" class="text-uppercase text-light text-decoration-none" id="filter-btn">Filter</a>
+      </form>
+    </div>
   </header>
 
   <main>
+    <!-- CAROUSEL HERO BANNER -->
     <div id="carouselInterval" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators d-flex d-xl-none flex-column" id="carousel-indicators">
         <button type="button" data-bs-target="#carouselInterval" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -227,6 +236,24 @@
         header.classList.remove('scrolled');
 
       };
+    });
+  </script>
+
+  <!-- SIDEBAR MENU SCRIPT -->
+  <script>
+    var menu = document.getElementById("menu");
+    menu.onclick = function() {
+      menu.classList.toggle("openmenu");
+    }
+  </script>
+  <!-- SIDEBAR NAVIGATIONMENU SCRIPT -->
+  <script>
+    let burgerBtn = document.querySelector('.burger-menu');
+    let sidebarMenu = document.querySelector('.sidebar-menu');
+    let blurBgFilter = document.querySelector('.blur-bg');
+    burgerBtn.addEventListener('click', function() {
+      sidebarMenu.classList.toggle('showmenu');
+      blurBgFilter.classList.toggle('active');
     });
   </script>
   <!-- BOOTSTRAP 5 -->
