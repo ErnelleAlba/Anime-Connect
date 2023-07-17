@@ -16,7 +16,7 @@
   <header class="d-flex justify-content-start">
     <!-- SIDEBAR NAVIGATION MENU -->
     <div class="navigation-menu">
-      <div id="sidebar-icon" class="px-5" onclick="topFunction()">
+      <div id="sidebar-icon" class="px-lg-5" onclick="topFunction()">
         <button class="burger-menu" id="menu">
           <span id="top-line"></span>
           <span id="mid-line"></span>
@@ -46,6 +46,18 @@
     </div>        
     <!-- SEARCH BAR -->
     <div class="bg-light d-none d-xl-block" id="search-content">
+      <form action="/search" class="d-flex">
+        <input class="form-control search-input" type="search" id="search-bar" placeholder="Search anime..." aria-label="Search">
+          <button type="submit" class="btn btn-light" id="search-icon-btn"><i class="fa-solid fa-magnifying-glass text-dark"></i></button>
+          <a href="#anime-list-page" class="text-uppercase text-light text-decoration-none" id="filter-btn">Filter</a>
+      </form>
+    </div>
+    <div>
+      <button  class="search-logo" >
+        <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+      </button>      
+    </div>
+    <div class="search-bar-mobile">
       <form action="/search" class="d-flex">
         <input class="form-control search-input" type="search" id="search-bar" placeholder="Search anime..." aria-label="Search">
           <button type="submit" class="btn btn-light" id="search-icon-btn"><i class="fa-solid fa-magnifying-glass text-dark"></i></button>
@@ -151,7 +163,7 @@
           <div class="carousel-caption d-flex flex-column justify-content-end"  id="carousel-text">
             <div id="carousel-sub-text">#3 Popular</div>
             <div id="carousel-title">Mushoku Tensei II: Isekai Ittara Honki Dasu</div>
-            <div class="gap-4 d-none d-xl-flex  id="carousel-detail">
+            <div class="gap-4 d-none d-xl-flex"  id="carousel-detail">
               <div>
                 <i class="fas fa-play-circle me-1"></i>TV
               </div>
@@ -254,8 +266,19 @@
       let blurBgFilter = document.querySelector('.blur-bg');
       sidebarMenu.classList.toggle('showmenu');
       blurBgFilter.classList.toggle('active');
+      document.body.classList.toggle('disable-scroll');
     });
   </script>
+
+  <!--SEARCH BAR MOBILE SCRIPT  -->
+    <script>
+      let searchBtn = document.querySelector('.search-logo');
+      searchBtn.addEventListener('click', function() {
+        let searchForm = document.querySelector('.search-bar-mobile');
+        searchForm.classList.toggle('showsearch');
+      });
+    </script>
+    
   <!-- SCROLL TO TOP SCRIPT -->
   <script>
     function topFunction() {

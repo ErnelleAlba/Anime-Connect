@@ -24,7 +24,14 @@ body {
   position: relative;
   background: #242428;
   color: #fff;
+  width: 101vw;
   overflow-x: hidden;
+  padding-right: 1vw;
+}
+
+body.disable-scroll {
+  height: auto;
+  overflow: hidden;
 }
 
 main {
@@ -37,7 +44,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100px;
+  height: 90px;
   background-color: transparent;
   display: flex;
   transition: background-color 0.2s ease-in-out;
@@ -46,11 +53,10 @@ header {
 
 #website-logo {
   margin-left: 200px;
-  margin-top: 5px;
 }
 
 #website-logo > img {
-  margin-top: 7px;
+  margin-top: 15px;
   height: 70px;
   width: 180px;
   object-fit: cover;
@@ -59,6 +65,7 @@ header {
 header.scrolled {
   background-color: rgb(36, 36, 40, 0.7);
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .navigation-menu {
@@ -122,22 +129,6 @@ header.scrolled {
   width: 0%;
 }
 
-@media (max-width: 600px) {
-  #sidebar-icon > button > span {
-    outline: 1px solid white;
-    outline-offset: 2px;
-    height: 3px;
-  }
-
-  #sidebar-icon > button > #top-line {
-    transform: translate(-50%, -15px);
-  }
-
-  #sidebar-icon > button > #bot-line {
-    transform: translate(-50%, 12px);
-  }
-}
-
 .sidebar-menu {
   height: 100vh;
   width: 300px;
@@ -147,7 +138,8 @@ header.scrolled {
   position: absolute;
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
-  transition: all 0.1s ease-in;
+  -webkit-backdrop-filter: blur(10px);
+  transition: all 0.3s ease-in;
   transform: translateX(-300px);
   z-index: 30;
 }
@@ -165,6 +157,7 @@ header.scrolled {
 .blur-bg.active {
   width: 100vw;
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 #sidebar > #sidebar-header {
@@ -210,7 +203,7 @@ header > .navigation-menu > .showmenu {
   position: relative;
   width: 400px;
   height: 40px;
-  margin-top: 18px;
+  margin-top: 25px;
 }
 
 #search-bar {
@@ -240,6 +233,109 @@ header > .navigation-menu > .showmenu {
 
 #filter-btn:hover {
   opacity: 0.8;
+}
+
+.search-logo {
+  display: none;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: var(--tc-white);
+}
+
+.search-bar-mobile {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  header {
+    height: 70px;
+    background-color: var(--bg-dark);
+  }
+
+  #website-logo {
+    margin-left: 40%;
+    height: 70px;
+  }
+
+  #website-logo > img {
+    height: 70px;
+    width: 130px;
+    margin-top: 5px;
+    object-fit: cover;
+  }
+
+  #sidebar-icon {
+    width: 40px;
+    height: 40px;
+    margin-top: 30px;
+    margin-left: 1.5rem;
+  }
+
+  #sidebar-icon > button {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+  }
+
+  #sidebar-icon > button > span {
+    outline: 1px solid white;
+    outline-offset: 2px;
+    height: 2px;
+    width: 100%;
+    top: 10%;
+  }
+
+  #sidebar-icon > button > #top-line {
+    transform: translate(-50%, -10px);
+  }
+
+  #sidebar-icon > button > #bot-line {
+    transform: translate(-50%, 8px);
+  }
+
+  #sidebar > #sidebar-header {
+    font-size: 2rem;
+    margin-right: 70px;
+  }
+
+  #sidebar > ul > li {
+    filter: drop-shadow(3px 3px #242428);
+  }
+
+  .search-logo {
+    display: block;
+    position: absolute;
+    right: 10%;
+    left: auto;
+    margin-top: 25px;
+  }
+
+  .search-bar-mobile {
+    display: block;
+    position: absolute;
+    background-color: rgb(36, 36, 40, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    margin-top: 10px;
+    width: 100vw;
+    height: 60px;
+    z-index: 15;
+    transition: all 0.5 ease-in;
+    transform: translateY(-70px);
+  }
+
+  .search-bar-mobile > form {
+    position: absolute;
+    background-color: white;
+    width: auto;
+    left: 5vw;
+    right: 5vw;
+  }
+
+  .search-bar-mobile.showsearch {
+    transform: translateY(60px);
+  }
 }
 
 .carousel-cover-img {
@@ -280,7 +376,7 @@ header > .navigation-menu > .showmenu {
 }
 
 .c-img {
-  margin-right: 30px;
+  margin-right: 60px;
   object-fit: cover;
   place-self: end;
 }
@@ -387,7 +483,7 @@ header > .navigation-menu > .showmenu {
 #carousel-indicators {
   margin: 0;
   left: auto;
-  right: 3%;
+  right: 7%;
   top: 30%;
   bottom: auto;
 }
