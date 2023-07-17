@@ -51,6 +51,7 @@ header {
   z-index: 100;
 }
 
+/* BRAND LOGO */
 #website-logo {
   margin-left: 200px;
 }
@@ -62,12 +63,14 @@ header {
   object-fit: cover;
 }
 
+/* HEADER ON SCROLL STYLE */
 header.scrolled {
   background-color: rgb(36, 36, 40, 0.7);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
 
+/* SIDEBAR CONTAINER */
 .navigation-menu {
   position: relative;
   top: 0;
@@ -75,6 +78,7 @@ header.scrolled {
   left: 0;
 }
 
+/* BURGER-MENU-ICON */
 #sidebar-icon {
   position: absolute;
   width: 60px;
@@ -86,6 +90,7 @@ header.scrolled {
   z-index: 100;
 }
 
+/* BURGER-MENU BUTTON */
 #sidebar-icon > button {
   width: 40px;
   height: 40px;
@@ -95,6 +100,7 @@ header.scrolled {
   border: none;
 }
 
+/* FOR EACH LINE OF BURGER ICON */
 #sidebar-icon > button > span {
   background-color: var(--tc-white);
   outline: 1px solid white;
@@ -117,6 +123,7 @@ header.scrolled {
   transform: translate(-50%, 15px);
 }
 
+/* BURGER-MENU ICON ANIMATION */
 #sidebar-icon > .openmenu > #top-line {
   transform: translate(-50%, -50%) rotate(-45deg);
 }
@@ -129,6 +136,7 @@ header.scrolled {
   width: 0%;
 }
 
+/* SIDEBAR MENU */
 .sidebar-menu {
   height: 100vh;
   width: 300px;
@@ -144,6 +152,7 @@ header.scrolled {
   z-index: 30;
 }
 
+/* BLUR EFFECT ON CLICK */
 .blur-bg {
   position: absolute;
   top: 0;
@@ -160,6 +169,7 @@ header.scrolled {
   -webkit-backdrop-filter: blur(10px);
 }
 
+/* SIDEBAR MENU TEXT STYLING */
 #sidebar > #sidebar-header {
   font-weight: var(--fw-600);
   text-align: right;
@@ -195,10 +205,12 @@ header.scrolled {
   color: var(--tc-yellow);
 }
 
+/* SIDEBAR SHOW ON CLICK */
 header > .navigation-menu > .showmenu {
   transform: translateX(0);
 }
 
+/* SEARCH BAR CONTAINER */
 #search-content {
   position: relative;
   width: 400px;
@@ -235,6 +247,7 @@ header > .navigation-menu > .showmenu {
   opacity: 0.8;
 }
 
+/* SEARCH BAR FOR MOBILE VIEW */
 .search-logo {
   display: none;
   cursor: pointer;
@@ -247,6 +260,7 @@ header > .navigation-menu > .showmenu {
   display: none;
 }
 
+/* MEDIA QUERY FOR HEADER */
 @media (max-width: 600px) {
   header {
     height: 70px;
@@ -303,6 +317,7 @@ header > .navigation-menu > .showmenu {
     filter: drop-shadow(3px 3px #242428);
   }
 
+  /* SEARCH BAR FOR MOBILE VIEW */
   .search-logo {
     display: block;
     position: absolute;
@@ -338,6 +353,7 @@ header > .navigation-menu > .showmenu {
   }
 }
 
+/* HERO CAROUSEL STYLING */
 .carousel {
   top: -9%;
 }
@@ -379,12 +395,14 @@ header > .navigation-menu > .showmenu {
   );
 }
 
+/* CAROUSEL IMG FOR MOBILE VIEW */
 .c-img {
   margin-right: 60px;
   object-fit: cover;
   place-self: end;
 }
 
+/* CAROUSEL IMG FOR DESKTOP VIEW */
 .c-md-img {
   margin-right: 100px;
   object-fit: contain;
@@ -394,6 +412,7 @@ header > .navigation-menu > .showmenu {
   height: 100%;
 }
 
+/* CAROUSEL TEXT STYLING */
 #carousel-text {
   padding-bottom: 50px;
   text-align: left;
@@ -442,6 +461,7 @@ header > .navigation-menu > .showmenu {
   overflow: hidden;
 }
 
+/* CAROUSEL DETAIL BUTTON */
 #carousel-btn > #detail-btn {
   text-decoration: none;
   font-weight: var(--fw-400);
@@ -456,6 +476,7 @@ header > .navigation-menu > .showmenu {
   background-color: var(--tc-yellow);
 }
 
+/* CAROUSEL NAVIGATION CONTROL STYLING */
 #carouselInterval > .carousel-control-prev,
 #carouselInterval > .carousel-control-next {
   width: 40px;
@@ -484,6 +505,7 @@ header > .navigation-menu > .showmenu {
   background-color: var(--tc-yellow);
 }
 
+/* CAROUSEL INDICATORS FOR MOBILE VIEW ONLY */
 #carousel-indicators {
   margin: 0;
   left: auto;
@@ -504,6 +526,7 @@ header > .navigation-menu > .showmenu {
   background-color: var(--tc-yellow) !important;
 }
 
+/* MEDIA QUERY FOR CAROUSEL */
 @media (max-width: 600px) {
   .carousel {
     top: 0;
@@ -536,6 +559,7 @@ header > .navigation-menu > .showmenu {
     font-size: 12px;
   }
 }
+
 /* FOOTER */
 #github-icon,
 #linkedin-icon,

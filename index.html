@@ -16,6 +16,7 @@
   <header class="d-flex justify-content-start">
     <!-- SIDEBAR NAVIGATION MENU -->
     <div class="navigation-menu">
+      <!-- BURGER MENU ICON -->
       <div id="sidebar-icon" class="px-lg-5" onclick="topFunction()">
         <button class="burger-menu" id="menu">
           <span id="top-line"></span>
@@ -23,6 +24,7 @@
           <span id="bot-line"></span>
         </button>      
       </div>
+      <!-- SIDEBAR MENU -->
       <nav class="sidebar-menu">
         <div id="sidebar">
           <h1 id="sidebar-header">Menu</h1>
@@ -35,6 +37,7 @@
           </ul>
         </div>               
       </nav>
+      <!-- BACKGROUND BLUR -->
       <div class="blur-bg"></div>   
     </div>
 
@@ -52,6 +55,7 @@
           <a href="#anime-list-page" class="text-uppercase text-light text-decoration-none" id="filter-btn">Filter</a>
       </form>
     </div>
+    <!-- SEARCH BAR FOR MOBILE VIEW -->
     <div>
       <button  class="search-logo" >
         <i class="fa-solid fa-magnifying-glass fa-xl"></i>
@@ -257,7 +261,8 @@
       menu.classList.toggle("openmenu");
     }
   </script>
-  <!-- SIDEBAR NAVIGATIONMENU SCRIPT -->
+
+  <!-- SIDEBAR NAVIGATION MENU SCRIPT -->
   <script>
     let burgerBtn = document.querySelector('.burger-menu');
 
@@ -286,6 +291,7 @@
       document.documentElement.scrollTop = 0;
     }
   </script>
+  
   <!-- BOOTSTRAP 5 -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
 </body>
