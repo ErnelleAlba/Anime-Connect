@@ -11,10 +11,8 @@
   --fw-400: 400;
   --fw-500: 500;
   --fw-600: 600;
-  --tw-backdrop-blur: blur(10px);
 }
 /* GLOBAL STYLES */
-
 * {
   margin: 0;
   padding: 0;
@@ -24,8 +22,9 @@
 
 body {
   position: relative;
-  background: var(--bg-dark);
+  background: #242428;
   color: #fff;
+  overflow-x: hidden;
 }
 
 main {
@@ -38,18 +37,18 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  height: 70px;
-  background-color: none;
-  backdrop-filter: blur(10px);
+  height: 100px;
+  background-color: transparent;
   display: flex;
   transition: background-color 0.2s ease-in-out;
-  z-index: 5;
+  z-index: 100;
 }
 
 #website-logo {
-  margin-left: 150px;
-  margin-top: 10px;
+  margin-left: 200px;
+  margin-top: 5px;
 }
+
 #website-logo > img {
   margin-top: 7px;
   height: 70px;
@@ -62,9 +61,13 @@ header.scrolled {
   backdrop-filter: blur(10px);
 }
 
-/* 
-  SIDEBAR MENU
-*/
+.navigation-menu {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
 #sidebar-icon {
   position: absolute;
   width: 60px;
@@ -76,7 +79,7 @@ header.scrolled {
   z-index: 100;
 }
 
-#sidebar-icon > div {
+#sidebar-icon > button {
   width: 40px;
   height: 40px;
   margin: 10px;
@@ -85,7 +88,7 @@ header.scrolled {
   border: none;
 }
 
-#sidebar-icon > div > span {
+#sidebar-icon > button > span {
   background-color: var(--tc-white);
   outline: 1px solid white;
   outline-offset: 3px;
@@ -100,10 +103,10 @@ header.scrolled {
   transition: transform 0.5s, width 0.5s;
 }
 
-#sidebar-icon > div > #top-line {
+#sidebar-icon > button > #top-line {
   transform: translate(-50%, -20px);
 }
-#sidebar-icon > div > #bot-line {
+#sidebar-icon > button > #bot-line {
   transform: translate(-50%, 15px);
 }
 
@@ -120,17 +123,17 @@ header.scrolled {
 }
 
 @media (max-width: 600px) {
-  #sidebar-icon > div > span {
+  #sidebar-icon > button > span {
     outline: 1px solid white;
     outline-offset: 2px;
     height: 3px;
   }
 
-  #sidebar-icon > div > #top-line {
+  #sidebar-icon > button > #top-line {
     transform: translate(-50%, -15px);
   }
 
-  #sidebar-icon > div > #bot-line {
+  #sidebar-icon > button > #bot-line {
     transform: translate(-50%, 12px);
   }
 }
@@ -142,25 +145,26 @@ header.scrolled {
   top: 0;
   padding-left: 20px;
   position: absolute;
-  background-color: rgb(255, 255, 255, 0.1);
-  backdrop-filter: blur(500px);
-  -webkit-backdrop-filter: var(--tw-backdrop-blur);
-  transition: all 0.5s ease-in;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  transition: all 0.1s ease-in;
   transform: translateX(-300px);
-  z-index: 50;
+  z-index: 30;
 }
 
 .blur-bg {
   position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  z-index: 10;
 }
 
 .blur-bg.active {
-  backdrop-filter: var(--tw-backdrop-blur);
-  -webkit-backdrop-filter: var(--tw-backdrop-blur);
-  height: 100vh;
-  width: auto;
-  margin: 0;
-  z-index: 40;
+  width: 100vw;
+  backdrop-filter: blur(10px);
 }
 
 #sidebar > #sidebar-header {
@@ -238,9 +242,6 @@ header > .navigation-menu > .showmenu {
   opacity: 0.8;
 }
 
-/* 
-  CAROUSEL-LANDING PAGE
-*/
 .carousel-cover-img {
   max-height: 600px;
   overflow: hidden;
@@ -431,7 +432,6 @@ header > .navigation-menu > .showmenu {
     font-size: 12px;
   }
 }
-
 /* FOOTER */
 #github-icon,
 #linkedin-icon,

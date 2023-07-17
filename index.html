@@ -16,12 +16,12 @@
   <header class="d-flex justify-content-start">
     <!-- SIDEBAR NAVIGATION MENU -->
     <div class="navigation-menu">
-      <div id="sidebar-icon" class="px-5">
-        <div class="burger-menu" id="menu" onclick="show()">
+      <div id="sidebar-icon" class="px-5" onclick="topFunction()">
+        <button class="burger-menu" id="menu">
           <span id="top-line"></span>
           <span id="mid-line"></span>
           <span id="bot-line"></span>
-        </div>      
+        </button>      
       </div>
       <nav class="sidebar-menu">
         <div id="sidebar">
@@ -234,14 +234,13 @@
         header.classList.add('scrolled');
       } else {
         header.classList.remove('scrolled');
-
       };
     });
   </script>
 
   <!-- SIDEBAR MENU SCRIPT -->
   <script>
-    var menu = document.getElementById("menu");
+    let menu = document.getElementById("menu");
     menu.onclick = function() {
       menu.classList.toggle("openmenu");
     }
@@ -249,12 +248,20 @@
   <!-- SIDEBAR NAVIGATIONMENU SCRIPT -->
   <script>
     let burgerBtn = document.querySelector('.burger-menu');
-    let sidebarMenu = document.querySelector('.sidebar-menu');
-    let blurBgFilter = document.querySelector('.blur-bg');
+
     burgerBtn.addEventListener('click', function() {
+      let sidebarMenu = document.querySelector('.sidebar-menu');
+      let blurBgFilter = document.querySelector('.blur-bg');
       sidebarMenu.classList.toggle('showmenu');
       blurBgFilter.classList.toggle('active');
     });
+  </script>
+  <!-- SCROLL TO TOP SCRIPT -->
+  <script>
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
   </script>
   <!-- BOOTSTRAP 5 -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
