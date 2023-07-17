@@ -338,8 +338,12 @@ header > .navigation-menu > .showmenu {
   }
 }
 
+.carousel {
+  top: -9%;
+}
+
 .carousel-cover-img {
-  max-height: 600px;
+  max-height: 700px;
   overflow: hidden;
   -webkit-mask-image: linear-gradient(
     270deg,
@@ -467,7 +471,7 @@ header > .navigation-menu > .showmenu {
 .carousel-control-prev {
   right: 5%;
   left: auto;
-  top: 77% !important;
+  top: 80% !important;
 }
 
 .carousel-control-next {
