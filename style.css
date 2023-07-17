@@ -505,6 +505,10 @@ header > .navigation-menu > .showmenu {
 }
 
 @media (max-width: 600px) {
+  .carousel {
+    top: 0;
+  }
+
   #carousel-text {
     padding-bottom: 30px;
     left: 5%;
