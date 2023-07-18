@@ -7,6 +7,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <!-- FONT AWESOME -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- SWIPER -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
   <!-- STYLE CSS -->
   <link rel="stylesheet" href="./style.css">
   <title>AnimeConnect</title>
@@ -72,7 +74,7 @@
 
   <main>
     <!-- CAROUSEL HERO BANNER -->
-    <div id="carouselInterval" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselInterval" class="carousel slide mb-5" data-bs-ride="carousel">
       <div class="carousel-indicators d-flex d-xl-none flex-column" id="carousel-indicators">
         <button type="button" data-bs-target="#carouselInterval" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselInterval" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -198,14 +200,30 @@
       
       </div>
       <button class="carousel-control-prev d-none d-xl-block" type="button" data-bs-target="#carouselInterval" data-bs-slide="prev">
-        <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+        <i class="fa-solid fa-angle-left" aria-hidden="true" style="font-weight: 900;"></i>
         <span class="visually-hidden">Previous</span>
       </button>
       <button class="carousel-control-next d-none d-xl-block" type="button" data-bs-target="#carouselInterval" data-bs-slide="next">
-        <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>        
+        <i class="fa-solid fa-angle-right" aria-hidden="true" style="font-weight: 900;"></i>        
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+
+    <section class="container-fluid" id="top-airing-section">
+      <h3 class="text-capitalize" id="section-label">Top Airing Anime</h3>
+      <!-- TOP AIRING ANIME SLIDER -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+        </div>
+      </div>
+      <!-- SLIDER NAVIGATION -->
+      <div class="top-airing-navigation">
+        <div class="swiper-button-prev"><i class="fa-solid fa-angle-left"></i></div>
+        <div class="swiper-button-next"><i class="fa-solid fa-angle-right"></i></div>
+      </div>
+    </section>
+
+
   </main>
 
   <footer>
@@ -276,14 +294,64 @@
   </script>
 
   <!--SEARCH BAR MOBILE SCRIPT  -->
-    <script>
-      let searchBtn = document.querySelector('.search-logo');
-      searchBtn.addEventListener('click', function() {
-        let searchForm = document.querySelector('.search-bar-mobile');
-        searchForm.classList.toggle('showsearch');
-      });
-    </script>
-    
+  <script>
+    let searchBtn = document.querySelector('.search-logo');
+    searchBtn.addEventListener('click', function() {
+      let searchForm = document.querySelector('.search-bar-mobile');
+      searchForm.classList.toggle('showsearch');
+    });
+  </script>
+
+  <!-- SCRIPT FOT TOP AIRING ANIME SLIDER -->
+  <script>      
+    fetch('https://api.jikan.moe/v4/seasons/now')
+    .then((res) => {
+      return res.json();
+    }).then((data) => {console.log(data);
+      const animeData = data.data;
+          
+      if (animeData && animeData.length > 0) {
+        const swiperWrapper = document.querySelector('.swiper-wrapper');
+      
+        for (let i = 0; i < 20; i++) {
+        const anime = animeData[i];
+        const slideDiv = document.createElement('div');
+          let num = i+1;
+          if (num <= 9){            
+          num = String(num).padStart(2, '0');
+          }
+
+          slideDiv.classList.add('swiper-slide'); 
+            slideDiv.innerHTML = `
+              <div class="anime-title dynamic-name">
+                ${anime.title}
+              </div>
+              <div class="number">${num}</div>
+              <a href="#">
+                <img src="${anime.images.jpg.image_url}">
+              </a>
+              `;
+        swiperWrapper.appendChild(slideDiv);
+        }
+      }
+    });
+  </script>
+  
+  <!-- SWIPER JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>  
+    <!-- INITIALIZE SWIPER-->
+  <script>
+    const swiper = new Swiper('.mySwiper', {
+      slidesPerView: 6,
+      spaceBetween: 15,
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+
   <!-- SCROLL TO TOP SCRIPT -->
   <script>
     function topFunction() {

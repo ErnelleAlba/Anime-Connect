@@ -5,6 +5,7 @@
 :root {
   --bg-gray: #757575;
   --bg-dark: #242428;
+  --bg-btn-gray: rgba(255, 255, 255, 0.1);
   --tc-yellow: #ffdd95;
   --tc-white: #fff;
   --fw-300: 300;
@@ -34,11 +35,6 @@ body.disable-scroll {
   overflow: hidden;
 }
 
-main {
-  height: 100vh;
-}
-
-/* HEADER */
 header {
   position: sticky;
   top: 0;
@@ -49,6 +45,12 @@ header {
   display: flex;
   transition: background-color 0.2s ease-in-out;
   z-index: 100;
+}
+
+main {
+  top: -85px;
+  height: 100%;
+  position: relative;
 }
 
 /* BRAND LOGO */
@@ -483,20 +485,20 @@ header > .navigation-menu > .showmenu {
   height: 40px;
   bottom: 50px !important;
   top: auto;
-  background-color: var(--bg-gray);
+  background-color: var(--bg-btn-gray);
   color: white;
   border-radius: 20%;
   opacity: 1;
 }
 
 .carousel-control-prev {
-  right: 5%;
+  right: 65px;
   left: auto;
   top: 80% !important;
 }
 
 .carousel-control-next {
-  right: 5%;
+  right: 65px;
 }
 
 #carouselInterval > .carousel-control-prev:hover,
@@ -558,6 +560,115 @@ header > .navigation-menu > .showmenu {
     font-weight: var(--fw-300);
     font-size: 12px;
   }
+}
+
+#section-label {
+  color: #ffdd95;
+  margin-left: 50px;
+  margin-bottom: 30px;
+}
+/* TOP AIRING SLIDER STYLING */
+.swiper {
+  height: 318px;
+  margin-left: 50px;
+  margin-right: 90px;
+  position: relative;
+  overflow: hidden;
+  overflow: clip;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+  display: block;
+  width: 1740px;
+}
+
+/* .swiper-wrapper {
+  width: calc(100%-15%);
+} */
+
+.swiper-slide {
+  width: 290px;
+  text-align: center;
+  font-size: 18px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  left: 10px;
+}
+
+/* SLIDER TEXT */
+.swiper-slide > .anime-title {
+  text-align: left;
+  height: 40px;
+  transform: rotate(-90deg);
+  position: absolute;
+  bottom: 160px;
+  width: 250px;
+  line-height: 40px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  left: -120px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.number {
+  position: absolute;
+  color: #ffdd95;
+  font-size: 25px;
+  font-weight: 600;
+  bottom: 0;
+  left: -10px;
+}
+/* SLIDER NAVIGATION */
+.top-airing-navigation {
+  position: absolute;
+  right: 55px;
+  bottom: 0;
+  width: 50px;
+  height: 318px;
+  padding: 10px 0 10px 0;
+}
+
+.top-airing-navigation div[class^="swiper-button"]::after {
+  display: none;
+}
+
+.top-airing-navigation > div {
+  height: 150px;
+  width: 40px;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--bg-btn-gray);
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  outline: 0;
+  box-shadow: none;
+  color: white;
+}
+
+.top-airing-navigation > div:hover {
+  background-color: #ffdd95;
+  color: black;
+}
+
+.top-airing-navigation > div > i {
+  font-weight: 900;
+  font-size: 25px;
+}
+
+.top-airing-navigation > div.swiper-button-prev {
+  bottom: 0;
+  top: auto;
+}
+.top-airing-navigation > div.swiper-button-next {
+  bottom: auto;
+  top: 22px;
 }
 
 /* FOOTER */
