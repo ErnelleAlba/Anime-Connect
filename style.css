@@ -568,10 +568,13 @@ header > .navigation-menu > .showmenu {
   margin-bottom: 30px;
 }
 /* TOP AIRING SLIDER STYLING */
+#top-airing-section {
+  position: relative;
+  width: 100%;
+}
 .swiper {
   height: 318px;
-  margin-left: 50px;
-  margin-right: 90px;
+  margin-left: 70px;
   position: relative;
   overflow: hidden;
   overflow: clip;
@@ -579,15 +582,15 @@ header > .navigation-menu > .showmenu {
   padding: 0;
   z-index: 1;
   display: block;
-  width: 1740px;
+  width: 91%;
 }
 
-/* .swiper-wrapper {
-  width: calc(100%-15%);
-} */
+.swiper-wrapper {
+  width: 100%;
+}
 
 .swiper-slide {
-  width: 290px;
+  width: 285px;
   text-align: center;
   font-size: 18px;
   background: transparent;
@@ -626,14 +629,16 @@ header > .navigation-menu > .showmenu {
 /* SLIDER NAVIGATION */
 .top-airing-navigation {
   position: absolute;
-  right: 55px;
+  right: 50px;
   bottom: 0;
   width: 50px;
   height: 318px;
-  padding: 10px 0 10px 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
-.top-airing-navigation div[class^="swiper-button"]::after {
+.top-airing-navigation > div[class^="swiper-button"]::after {
   display: none;
 }
 

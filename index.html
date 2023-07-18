@@ -209,7 +209,7 @@
       </button>
     </div>
 
-    <section class="container-fluid" id="top-airing-section">
+    <section id="top-airing-section">
       <h3 class="text-capitalize" id="section-label">Top Airing Anime</h3>
       <!-- TOP AIRING ANIME SLIDER -->
       <div class="swiper mySwiper">
@@ -219,7 +219,7 @@
       <!-- SLIDER NAVIGATION -->
       <div class="top-airing-navigation">
         <div class="swiper-button-prev"><i class="fa-solid fa-angle-left"></i></div>
-        <div class="swiper-button-next"><i class="fa-solid fa-angle-right"></i></div>
+        <div class="swiper-button-next" id="#slide-next-button"><i class="fa-solid fa-angle-right"></i></div>
       </div>
     </section>
 
@@ -342,14 +342,15 @@
     <!-- INITIALIZE SWIPER-->
   <script>
     const swiper = new Swiper('.mySwiper', {
-      slidesPerView: 6,
-      spaceBetween: 15,
+      slidesPerView: 'auto',
+      spaceBetween: 8,
       // Navigation arrows
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
     });
+
   </script>
 
   <!-- SCROLL TO TOP SCRIPT -->
