@@ -361,7 +361,7 @@ header > .navigation-menu > .showmenu {
 }
 
 .carousel-cover-img {
-  max-height: 700px;
+  max-height: 800px;
   overflow: hidden;
   -webkit-mask-image: linear-gradient(
     270deg,
@@ -400,8 +400,11 @@ header > .navigation-menu > .showmenu {
 /* CAROUSEL IMG FOR MOBILE VIEW */
 .c-img {
   margin-right: 60px;
+  margin-top: 70px;
   object-fit: cover;
+  object-position: -20px 40px;
   place-self: end;
+  height: 100%;
 }
 
 /* CAROUSEL IMG FOR DESKTOP VIEW */
@@ -512,7 +515,7 @@ header > .navigation-menu > .showmenu {
   margin: 0;
   left: auto;
   right: 7%;
-  top: 30%;
+  top: 25%;
   bottom: auto;
 }
 
@@ -530,12 +533,13 @@ header > .navigation-menu > .showmenu {
 
 /* MEDIA QUERY FOR CAROUSEL */
 @media (max-width: 600px) {
-  .carousel {
-    top: 0;
+  #carouselInterval {
+    height: 400px;
+    margin-top: 45px;
   }
 
   #carousel-text {
-    padding-bottom: 30px;
+    padding-bottom: 60px;
     left: 5%;
   }
 
@@ -568,7 +572,7 @@ header > .navigation-menu > .showmenu {
   margin-bottom: 30px;
 }
 /* TOP AIRING SLIDER STYLING */
-#top-airing-section {
+#trending-anime-section {
   position: relative;
   width: 100%;
 }
@@ -627,7 +631,7 @@ header > .navigation-menu > .showmenu {
   left: -10px;
 }
 /* SLIDER NAVIGATION */
-.top-airing-navigation {
+.trending-anime-navigation {
   position: absolute;
   right: 50px;
   bottom: 0;
@@ -638,11 +642,11 @@ header > .navigation-menu > .showmenu {
   align-content: center;
 }
 
-.top-airing-navigation > div[class^="swiper-button"]::after {
+.trending-anime-navigation > div[class^="swiper-button"]::after {
   display: none;
 }
 
-.top-airing-navigation > div {
+.trending-anime-navigation > div {
   height: 150px;
   width: 40px;
   top: 0;
@@ -657,21 +661,21 @@ header > .navigation-menu > .showmenu {
   color: white;
 }
 
-.top-airing-navigation > div:hover {
+.trending-anime-navigation > div:hover {
   background-color: #ffdd95;
   color: black;
 }
 
-.top-airing-navigation > div > i {
+.trending-anime-navigation > div > i {
   font-weight: 900;
   font-size: 25px;
 }
 
-.top-airing-navigation > div.swiper-button-prev {
+.trending-anime-navigation > div.swiper-button-prev {
   bottom: 0;
   top: auto;
 }
-.top-airing-navigation > div.swiper-button-next {
+.trending-anime-navigation > div.swiper-button-next {
   bottom: auto;
   top: 22px;
 }

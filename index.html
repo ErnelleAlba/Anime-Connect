@@ -75,129 +75,236 @@
   <main>
     <!-- CAROUSEL HERO BANNER -->
     <div id="carouselInterval" class="carousel slide mb-5" data-bs-ride="carousel">
+      <!-- INDICATORS FOR MOBILE VIEW -->
       <div class="carousel-indicators d-flex d-xl-none flex-column" id="carousel-indicators">
         <button type="button" data-bs-target="#carouselInterval" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselInterval" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselInterval" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselInterval" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselInterval" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselInterval" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        <button type="button" data-bs-target="#carouselInterval" data-bs-slide-to="6" aria-label="Slide 7"></button>
+        <button type="button" data-bs-target="#carouselInterval" data-bs-slide-to="7" aria-label="Slide 8"></button>
+        <button type="button" data-bs-target="#carouselInterval" data-bs-slide-to="8" aria-label="Slide 9"></button>
       </div>
+      <!-- CAROUSEL SLIDES -->
       <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="10000" id="carousel-item">
+        <div class="carousel-item active" data-bs-interval="5000" id="carousel-item">
           <div class="carousel-cover">
             <div class="d-grid carousel-cover-img">
-              <img src="https://cdn.myanimelist.net/images/anime/1695/111486l.webp" class="d-block d-md-none w-50 c-img" alt="hero-banner-1">
-              <img src="https://cdn.myanimelist.net/images/anime/1695/111486l.webp" class="d-none d-md-block w-50 c-md-img" alt="hero-banner-1">
+              <img id="img-slide-1" src="" class="d-block d-lg-none w-50 c-img" alt="">
+              <img id="img-slide-1-s" src="" class="d-none d-lg-block w-50 c-md-img" alt="">
             </div>
           </div>
-
-          <div class="carousel-caption d-flex flex-column justify-content-end"  id="carousel-text">
-            <div id="carousel-sub-text">#1 Popular</div>
-            <div id="carousel-title">Horimiya</div>
+          <div class="carousel-caption d-flex flex-column justify-content-end" id="carousel-text">
+            <div id="carousel-sub-text">#1 Spotlight</div>
+            <div id="carousel-title"><span id="title-slide-1"></span></div>
             <div class="gap-4 d-none d-xl-flex " id="carousel-detail">
-              <div>
-                <i class="fas fa-play-circle me-1"></i>TV
-              </div>
-              <div>
-                <i class="fas fa-clock me-1"></i>23m
-              </div>
-              <div>
-                <i class="fas fa-calendar me-1"></i>Jan 10, 2021 to Apr 4, 2021
-              </div>                         
+              <div><i class="fas fa-play-circle me-1" ></i><span id="type-slide-1"></span></div>
+              <div><i class="fas fa-clock me-1" ></i><span id="duration-slide-1"></span></div>
+              <div><i class="fas fa-calendar me-1"></i><span id="aired-date-slide-1"></span></div>                         
             </div>
             <div id="carousel-description-section" class="w-50 d-none d-xl-block">
-              <div id="carousel-description">
-                On the surface, the thought of Kyouko Hori and Izumi Miyamura getting along would be the last thing in people's minds. After all, Hori has a perfect combination of beauty and brains, while Miyamura appears meek and distant to his fellow classmates. However, a fateful meeting between the two lays both of their hidden selves bare. Even though she is popular at school, Hori has little time to socialize with her friends due to housework. On the other hand, Miyamura lives under the noses of his peers, his body bearing secret tattoos and piercings that make him look like a gentle delinquent.
-  
-                Having opposite personalities yet sharing odd similarities, the two quickly become friends and often spend time together in Hori's home. As they both emerge from their shells, they share with each other a side of themselves concealed from the outside world.
-  
-                [Written by MAL Rewrite]
-              </div>
+              <div id="carousel-description"><span id="synopsis-slide-1"></span></div>
             </div>            
             <div id="carousel-btn">
-              <a href="#" id="detail-btn">Detail
-                <i class="fas fa-angle-right ml-2"></i>
-              </a>
-          </div>
-          </div>
-        </div>
-        <div class="carousel-item" data-bs-interval="10000" id="carousel-item">
-          <div class="carousel-cover">
-            <div class="d-grid carousel-cover-img">
-              <img src="https://cdn.myanimelist.net/images/anime/1600/134703l.webp" class="d-block d-md-none w-50 c-img" alt="hero-banner-2">
-              <img src="https://cdn.myanimelist.net/images/anime/1600/134703l.webp" class="d-none d-md-block w-50 c-md-img" alt="hero-banner-2">
+              <a href="#" id="detail-btn">Detail<i class="fas fa-angle-right ml-2"></i></a>
             </div>
           </div>
+        </div>
 
-          <div class="carousel-caption d-flex flex-column justify-content-end"  id="carousel-text">
-            <div id="carousel-sub-text">#2 Popular</div>
-            <div id="carousel-title">Jujutsu Kaisen 2nd Season</div>
+        <div class="carousel-item" data-bs-interval="5000" id="carousel-item">
+          <div class="carousel-cover">
+            <div class="d-grid carousel-cover-img">
+              <img id="img-slide-2" src="" class="d-block d-md-none w-50 c-img" alt="">
+              <img id="img-slide-2-s" src="" class="d-none d-md-block w-50 c-md-img" alt="">
+            </div>
+          </div>
+          <div class="carousel-caption d-flex flex-column justify-content-end" id="carousel-text">
+            <div id="carousel-sub-text">#2 Spotlight</div>
+            <div id="carousel-title"><span id="title-slide-2"></span></div>
             <div class="gap-4 d-none d-xl-flex" id="carousel-detail">
-              <div>
-                <i class="fas fa-play-circle me-1"></i>TV
-              </div>
-              <div>
-                <i class="fas fa-clock me-1"></i>23m
-              </div>
-              <div>
-                <i class="fas fa-calendar me-1"></i>Jul 6, 2023 to ?
-              </div>                         
+              <div><i class="fas fa-play-circle me-1"></i><span id="type-slide-2"></span></div>
+              <div><i class="fas fa-clock me-1"></i><span id="duration-slide-2"></span></div>
+              <div><i class="fas fa-calendar me-1"></i><span id="aired-date-slide-2"></span></div>                         
             </div>
             <div id="carousel-description-section" class="w-50 d-none d-xl-block">
-              <div id="carousel-description">
-                On the surface, the thought of Kyouko Hori and Izumi Miyamura getting along would be the last thing in people's minds. After all, Hori has a perfect combination of beauty and brains, while Miyamura appears meek and distant to his fellow classmates. However, a fateful meeting between the two lays both of their hidden selves bare. Even though she is popular at school, Hori has little time to socialize with her friends due to housework. On the other hand, Miyamura lives under the noses of his peers, his body bearing secret tattoos and piercings that make him look like a gentle delinquent.
-  
-                Having opposite personalities yet sharing odd similarities, the two quickly become friends and often spend time together in Hori's home. As they both emerge from their shells, they share with each other a side of themselves concealed from the outside world.
-  
-                [Written by MAL Rewrite]
-              </div>
+              <div id="carousel-description"><span id="synopsis-slide-2"></span></div>
             </div>
-
             <div id="carousel-btn">
-              <a href="#" id="detail-btn">Detail
-                <i class="fas fa-angle-right ml-2"></i>
-              </a>
-          </div>
+              <a href="#" id="detail-btn">Detail<i class="fas fa-angle-right ml-2"></i></a>
+            </div>
           </div>
         </div>
-        <div class="carousel-item" data-bs-interval="10000" id="carousel-item">
+
+        <div class="carousel-item" data-bs-interval="5000" id="carousel-item">
           <div class="carousel-cover">
             <div class="d-grid carousel-cover-img">
-              <img src="https://cdn.myanimelist.net/images/anime/1674/136728l.webp" class="d-block d-md-none w-50 c-img" alt="hero-banner-1">
-              <img src="https://cdn.myanimelist.net/images/anime/1674/136728l.webp" class="d-none d-md-block w-50 c-md-img" alt="hero-banner-1">
+              <img id="img-slide-3" src="" class="d-block d-md-none w-50 c-img" alt="">
+              <img id="img-slide-3-s" src="" class="d-none d-md-block w-50 c-md-img" alt="">
             </div>
           </div>
-
-          <div class="carousel-caption d-flex flex-column justify-content-end"  id="carousel-text">
-            <div id="carousel-sub-text">#3 Popular</div>
-            <div id="carousel-title">Mushoku Tensei II: Isekai Ittara Honki Dasu</div>
-            <div class="gap-4 d-none d-xl-flex"  id="carousel-detail">
-              <div>
-                <i class="fas fa-play-circle me-1"></i>TV
-              </div>
-              <div>
-                <i class="fas fa-clock me-1"></i>23m
-              </div>
-              <div>
-                <i class="fas fa-calendar me-1"></i>Jul 10, 2023 to ?
-              </div>                         
+          <div class="carousel-caption d-flex flex-column justify-content-end" id="carousel-text">
+            <div id="carousel-sub-text">#3 Spotlight</div>
+            <div id="carousel-title"><span id="title-slide-3"></span></div>
+            <div class="gap-4 d-none d-xl-flex" id="carousel-detail">
+              <div><i class="fas fa-play-circle me-1"></i><span id="type-slide-3"></span></div>
+              <div><i class="fas fa-clock me-1"></i><span id="duration-slide-3"></span></div>
+              <div><i class="fas fa-calendar me-1"></i><span id="aired-date-slide-3"></span></div>                         
             </div>
             <div id="carousel-description-section" class="w-50 d-none d-xl-block">
-              <div id="carousel-description">
-                On the surface, the thought of Kyouko Hori and Izumi Miyamura getting along would be the last thing in people's minds. After all, Hori has a perfect combination of beauty and brains, while Miyamura appears meek and distant to his fellow classmates. However, a fateful meeting between the two lays both of their hidden selves bare. Even though she is popular at school, Hori has little time to socialize with her friends due to housework. On the other hand, Miyamura lives under the noses of his peers, his body bearing secret tattoos and piercings that make him look like a gentle delinquent.
-  
-                Having opposite personalities yet sharing odd similarities, the two quickly become friends and often spend time together in Hori's home. As they both emerge from their shells, they share with each other a side of themselves concealed from the outside world.
-  
-                [Written by MAL Rewrite]
-              </div>
+              <div id="carousel-description"><span id="synopsis-slide-3"></span></div>
             </div>
-
             <div id="carousel-btn">
-              <a href="#" id="detail-btn">Detail
-                <i class="fas fa-angle-right ml-2"></i>
-              </a>
-          </div>
+              <a href="#" id="detail-btn">Detail<i class="fas fa-angle-right ml-2"></i></a>
+            </div>
           </div>
         </div>
-      
+
+        <div class="carousel-item" data-bs-interval="5000" id="carousel-item">
+          <div class="carousel-cover">
+            <div class="d-grid carousel-cover-img">
+              <img id="img-slide-4" src="" class="d-block d-md-none w-50 c-img" alt="">
+              <img id="img-slide-4-s" src="" class="d-none d-md-block w-50 c-md-img" alt="">
+            </div>
+          </div>
+          <div class="carousel-caption d-flex flex-column justify-content-end" id="carousel-text">
+            <div id="carousel-sub-text">#4 Spotlight</div>
+            <div id="carousel-title"><span id="title-slide-4"></span></div>
+            <div class="gap-4 d-none d-xl-flex" id="carousel-detail">
+              <div><i class="fas fa-play-circle me-1"></i><span id="type-slide-4"></span></div>
+              <div><i class="fas fa-clock me-1"></i><span id="duration-slide-4"></span></div>
+              <div><i class="fas fa-calendar me-1"></i><span id="aired-date-slide-4"></span></div>                         
+            </div>
+            <div id="carousel-description-section" class="w-50 d-none d-xl-block">
+              <div id="carousel-description"><span id="synopsis-slide-4"></span></div>
+            </div>
+            <div id="carousel-btn">
+              <a href="#" id="detail-btn">Detail<i class="fas fa-angle-right ml-2"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="carousel-item" data-bs-interval="5000" id="carousel-item">
+          <div class="carousel-cover">
+            <div class="d-grid carousel-cover-img">
+              <img id="img-slide-5" src="" class="d-block d-md-none w-50 c-img" alt="">
+              <img id="img-slide-5-s" src="" class="d-none d-md-block w-50 c-md-img" alt="">
+            </div>
+          </div>
+          <div class="carousel-caption d-flex flex-column justify-content-end" id="carousel-text">
+            <div id="carousel-sub-text">#5 Spotlight</div>
+            <div id="carousel-title"><span id="title-slide-5"></span></div>
+            <div class="gap-4 d-none d-xl-flex" id="carousel-detail">
+              <div><i class="fas fa-play-circle me-1"></i><span id="type-slide-5"></span></div>
+              <div><i class="fas fa-clock me-1"></i><span id="duration-slide-5"></span></div>
+              <div><i class="fas fa-calendar me-1"></i><span id="aired-date-slide-5"></span></div>                         
+            </div>
+            <div id="carousel-description-section" class="w-50 d-none d-xl-block">
+              <div id="carousel-description"><span id="synopsis-slide-5"></span></div>
+            </div>
+            <div id="carousel-btn">
+              <a href="#" id="detail-btn">Detail<i class="fas fa-angle-right ml-2"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item" data-bs-interval="5000" id="carousel-item">
+          <div class="carousel-cover">
+            <div class="d-grid carousel-cover-img">
+              <img id="img-slide-6" src="" class="d-block d-md-none w-50 c-img" alt="">
+              <img id="img-slide-6-s" src="" class="d-none d-md-block w-50 c-md-img" alt="">
+            </div>
+          </div>
+          <div class="carousel-caption d-flex flex-column justify-content-end" id="carousel-text">
+            <div id="carousel-sub-text">#6 Spotlight</div>
+            <div id="carousel-title"><span id="title-slide-6"></span></div>
+            <div class="gap-4 d-none d-xl-flex" id="carousel-detail">
+              <div><i class="fas fa-play-circle me-1"></i><span id="type-slide-6"></span></div>
+              <div><i class="fas fa-clock me-1"></i><span id="duration-slide-6"></span></div>
+              <div><i class="fas fa-calendar me-1"></i><span id="aired-date-slide-6"></span></div>                         
+            </div>
+            <div id="carousel-description-section" class="w-50 d-none d-xl-block">
+              <div id="carousel-description"><span id="synopsis-slide-6"></span></div>
+            </div>
+            <div id="carousel-btn">
+              <a href="#" id="detail-btn">Detail<i class="fas fa-angle-right ml-2"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item" data-bs-interval="5000" id="carousel-item">
+          <div class="carousel-cover">
+            <div class="d-grid carousel-cover-img">
+              <img id="img-slide-7" src="" class="d-block d-md-none w-50 c-img" alt="">
+              <img id="img-slide-7-s" src="" class="d-none d-md-block w-50 c-md-img" alt="">
+            </div>
+          </div>
+          <div class="carousel-caption d-flex flex-column justify-content-end" id="carousel-text">
+            <div id="carousel-sub-text">#7 Spotlight</div>
+            <div id="carousel-title"><span id="title-slide-7"></span></div>
+            <div class="gap-4 d-none d-xl-flex" id="carousel-detail">
+              <div><i class="fas fa-play-circle me-1"></i><span id="type-slide-7"></span></div>
+              <div><i class="fas fa-clock me-1"></i><span id="duration-slide-7"></span></div>
+              <div><i class="fas fa-calendar me-1"></i><span id="aired-date-slide-7"></span></div>                         
+            </div>
+            <div id="carousel-description-section" class="w-50 d-none d-xl-block">
+              <div id="carousel-description"><span id="synopsis-slide-7"></span></div>
+            </div>
+            <div id="carousel-btn">
+              <a href="#" id="detail-btn">Detail<i class="fas fa-angle-right ml-2"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item" data-bs-interval="5000" id="carousel-item">
+          <div class="carousel-cover">
+            <div class="d-grid carousel-cover-img">
+              <img id="img-slide-8" src="" class="d-block d-md-none w-50 c-img" alt="">
+              <img id="img-slide-8-s" src="" class="d-none d-md-block w-50 c-md-img" alt="">
+            </div>
+          </div>
+          <div class="carousel-caption d-flex flex-column justify-content-end" id="carousel-text">
+            <div id="carousel-sub-text">#8 Spotlight</div>
+            <div id="carousel-title"><span id="title-slide-8"></span></div>
+            <div class="gap-4 d-none d-xl-flex" id="carousel-detail">
+              <div><i class="fas fa-play-circle me-1"></i><span id="type-slide-8"></span></div>
+              <div><i class="fas fa-clock me-1"></i><span id="duration-slide-8"></span></div>
+              <div><i class="fas fa-calendar me-1"></i><span id="aired-date-slide-8"></span></div>                         
+            </div>
+            <div id="carousel-description-section" class="w-50 d-none d-xl-block">
+              <div id="carousel-description"><span id="synopsis-slide-8"></span></div>
+            </div>
+            <div id="carousel-btn">
+              <a href="#" id="detail-btn">Detail<i class="fas fa-angle-right ml-2"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item" data-bs-interval="5000" id="carousel-item">
+          <div class="carousel-cover">
+            <div class="d-grid carousel-cover-img">
+              <img id="img-slide-9" src="" class="d-block d-md-none w-50 c-img" alt="">
+              <img id="img-slide-9-s" src="" class="d-none d-md-block w-50 c-md-img" alt="">
+            </div>
+          </div>
+          <div class="carousel-caption d-flex flex-column justify-content-end" id="carousel-text">
+            <div id="carousel-sub-text">#9 Spotlight</div>
+            <div id="carousel-title"><span id="title-slide-9"></span></div>
+            <div class="gap-4 d-none d-xl-flex" id="carousel-detail">
+              <div><i class="fas fa-play-circle me-1"></i><span id="type-slide-9"></span></div>
+              <div><i class="fas fa-clock me-1"></i><span id="duration-slide-9"></span></div>
+              <div><i class="fas fa-calendar me-1"></i><span id="aired-date-slide-9"></span></div>                         
+            </div>
+            <div id="carousel-description-section" class="w-50 d-none d-xl-block">
+              <div id="carousel-description"><span id="synopsis-slide-9"></span></div>
+            </div>
+            <div id="carousel-btn">
+              <a href="#" id="detail-btn">Detail<i class="fas fa-angle-right ml-2"></i></a>
+            </div>
+          </div>
+        </div>
+
       </div>
       <button class="carousel-control-prev d-none d-xl-block" type="button" data-bs-target="#carouselInterval" data-bs-slide="prev">
         <i class="fa-solid fa-angle-left" aria-hidden="true" style="font-weight: 900;"></i>
@@ -209,7 +316,7 @@
       </button>
     </div>
 
-    <section id="top-airing-section">
+    <section id="trending-anime-section">
       <h3 class="text-capitalize" id="section-label">Trending Anime</h3>
       <!-- TRENDING ANIME SLIDER -->
       <div class="swiper mySwiper">
@@ -217,7 +324,7 @@
         </div>
       </div>
       <!-- SLIDER NAVIGATION -->
-      <div class="top-airing-navigation">
+      <div class="trending-anime-navigation">
         <div class="swiper-button-prev"><i class="fa-solid fa-angle-left"></i></div>
         <div class="swiper-button-next" id="#slide-next-button"><i class="fa-solid fa-angle-right"></i></div>
       </div>
@@ -302,27 +409,108 @@
     });
   </script>
 
+  <!-- CAROUSEL CONTENT SCRIPT -->
+  <script>
+    fetch('https://api.jikan.moe/v4/seasons/now?sfw')
+    .then((res) => {
+      return res.json();
+    }).then((data) => {
+      const carouselData = data.data;
+      // SLIDE 1
+      document.getElementById('img-slide-1').src = `${carouselData[0].images.webp.large_image_url}`;
+      document.getElementById('img-slide-1-s').src = `${carouselData[0].images.webp.large_image_url}`;
+      document.getElementById('title-slide-1').textContent = `${carouselData[0].title}`;
+      document.getElementById('type-slide-1').textContent = `${carouselData[0].type}`;
+      document.getElementById('duration-slide-1').textContent = `${carouselData[0].duration.split("per")[0]}`;
+      document.getElementById('aired-date-slide-1').textContent = `${carouselData[0].aired.string.split("to")[0]}`;
+      document.getElementById('synopsis-slide-1').textContent = `${carouselData[0].synopsis}`;
+      // SLIDE 2
+      document.getElementById('img-slide-2').src = `${carouselData[1].images.webp.large_image_url}`;
+      document.getElementById('img-slide-2-s').src = `${carouselData[1].images.webp.large_image_url}`;
+      document.getElementById('title-slide-2').textContent = `${carouselData[1].title}`;
+      document.getElementById('type-slide-2').textContent = `${carouselData[1].type}`;
+      document.getElementById('duration-slide-2').textContent = `${carouselData[1].duration.split("per")[0]}`;
+      document.getElementById('aired-date-slide-2').textContent = `${carouselData[1].aired.string.split("to")[0]}`;
+      document.getElementById('synopsis-slide-2').textContent = `${carouselData[1].synopsis}`;
+      // SLIDE 3
+      document.getElementById('img-slide-3').src = `${carouselData[2].images.webp.large_image_url}`;
+      document.getElementById('img-slide-3-s').src = `${carouselData[2].images.webp.large_image_url}`;
+      document.getElementById('title-slide-3').textContent = `${carouselData[2].title}`;
+      document.getElementById('type-slide-3').textContent = `${carouselData[2].type}`;
+      document.getElementById('duration-slide-3').textContent = `${carouselData[2].duration.split("per")[0]}`;
+      document.getElementById('aired-date-slide-3').textContent = `${carouselData[2].aired.string.split("to")[0]}`;
+      document.getElementById('synopsis-slide-3').textContent = `${carouselData[2].synopsis}`;
+      // SLIDE 4
+      document.getElementById('img-slide-4').src = `${carouselData[3].images.webp.large_image_url}`;
+      document.getElementById('img-slide-4-s').src = `${carouselData[3].images.webp.large_image_url}`;
+      document.getElementById('title-slide-4').textContent = `${carouselData[3].title}`;
+      document.getElementById('type-slide-4').textContent = `${carouselData[3].type}`;
+      document.getElementById('duration-slide-4').textContent = `${carouselData[3].duration.split("per")[0]}`;
+      document.getElementById('aired-date-slide-4').textContent = `${carouselData[3].aired.string.split("to")[0]}`;
+      document.getElementById('synopsis-slide-4').textContent = `${carouselData[3].synopsis}`;
+      // SLIDE 5
+      document.getElementById('img-slide-5').src = `${carouselData[4].images.webp.large_image_url}`;
+      document.getElementById('img-slide-5-s').src = `${carouselData[4].images.webp.large_image_url}`;
+      document.getElementById('title-slide-5').textContent = `${carouselData[4].title}`;
+      document.getElementById('type-slide-5').textContent = `${carouselData[4].type}`;
+      document.getElementById('duration-slide-5').textContent = `${carouselData[4].duration.split("per")[0]}`;
+      document.getElementById('aired-date-slide-5').textContent = `${carouselData[4].aired.string.split("to")[0]}`;
+      document.getElementById('synopsis-slide-5').textContent = `${carouselData[4].synopsis}`;
+      // SLIDE 6
+      document.getElementById('img-slide-6').src = `${carouselData[5].images.webp.large_image_url}`;
+      document.getElementById('img-slide-6-s').src = `${carouselData[5].images.webp.large_image_url}`;
+      document.getElementById('title-slide-6').textContent = `${carouselData[5].title}`;
+      document.getElementById('type-slide-6').textContent = `${carouselData[5].type}`;
+      document.getElementById('duration-slide-6').textContent = `${carouselData[5].duration.split("per")[0]}`;
+      document.getElementById('aired-date-slide-6').textContent = `${carouselData[5].aired.string.split("to")[0]}`;
+      document.getElementById('synopsis-slide-6').textContent = `${carouselData[5].synopsis}`;
+      // SLIDE 7
+      document.getElementById('img-slide-7').src = `${carouselData[6].images.webp.large_image_url}`;
+      document.getElementById('img-slide-7-s').src = `${carouselData[6].images.webp.large_image_url}`;
+      document.getElementById('title-slide-7').textContent = `${carouselData[6].title}`;
+      document.getElementById('type-slide-7').textContent = `${carouselData[6].type}`;
+      document.getElementById('duration-slide-7').textContent = `${carouselData[6].duration.split("per")[0]}`;
+      document.getElementById('aired-date-slide-7').textContent = `${carouselData[6].aired.string.split("to")[0]}`;
+      document.getElementById('synopsis-slide-7').textContent = `${carouselData[6].synopsis}`;
+      // SLIDE 8
+      document.getElementById('img-slide-8').src = `${carouselData[7].images.webp.large_image_url}`;
+      document.getElementById('img-slide-8-s').src = `${carouselData[7].images.webp.large_image_url}`;
+      document.getElementById('title-slide-8').textContent = `${carouselData[7].title}`;
+      document.getElementById('type-slide-8').textContent = `${carouselData[7].type}`;
+      document.getElementById('duration-slide-8').textContent = `${carouselData[7].duration.split("per")[0]}`;
+      document.getElementById('aired-date-slide-8').textContent = `${carouselData[7].aired.string.split("to")[0]}`;
+      document.getElementById('synopsis-slide-8').textContent = `${carouselData[7].synopsis}`;
+      // SLIDE 9
+      document.getElementById('img-slide-9').src = `${carouselData[8].images.webp.large_image_url}`;
+      document.getElementById('img-slide-9-s').src = `${carouselData[8].images.webp.large_image_url}`;
+      document.getElementById('title-slide-9').textContent = `${carouselData[8].title}`;
+      document.getElementById('type-slide-9').textContent = `${carouselData[8].type}`;
+      document.getElementById('duration-slide-9').textContent = `${carouselData[8].duration.split("per")[0]}`;
+      document.getElementById('aired-date-slide-9').textContent = `${carouselData[8].aired.string.split("to")[0]}`;
+      document.getElementById('synopsis-slide-9').textContent = `${carouselData[8].synopsis}`;
+      }
+    );
+  </script>
+
   <!-- SCRIPT FOR TRENDING ANIME SLIDER -->
   <script>      
     fetch('https://api.jikan.moe/v4/anime?sfw&status=airing&order_by=rank&order_by=popularity')
     .then((res) => {
       return res.json();
-    }).then((data) => {console.log(data);
+    }).then((data) => {
       const animeData = data.data;
-          
-      if (animeData && animeData.length > 0) {
-        const swiperWrapper = document.querySelector('.swiper-wrapper');
+      const swiperWrapper = document.querySelector('.swiper-wrapper');
       
-        for (let i = 0; i < 20; i++) {
+      for (let i = 0; i < 20; i++) {
         const anime = animeData[i];
         const slideDiv = document.createElement('div');
-          let num = i+1;
-          if (num <= 9){            
+        let num = i+1;
+        if (num <= 9){            
           num = String(num).padStart(2, '0');
-          }
+        }
 
-          slideDiv.classList.add('swiper-slide'); 
-            slideDiv.innerHTML = `
+        slideDiv.classList.add('swiper-slide'); 
+        slideDiv.innerHTML = `
               <div class="anime-title dynamic-name">
                 ${anime.title}
               </div>
@@ -332,7 +520,6 @@
               </a>
               `;
         swiperWrapper.appendChild(slideDiv);
-        }
       }
     });
   </script>
