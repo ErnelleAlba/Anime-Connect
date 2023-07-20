@@ -210,8 +210,8 @@
     </div>
 
     <section id="top-airing-section">
-      <h3 class="text-capitalize" id="section-label">Top Airing Anime</h3>
-      <!-- TOP AIRING ANIME SLIDER -->
+      <h3 class="text-capitalize" id="section-label">Trending Anime</h3>
+      <!-- TRENDING ANIME SLIDER -->
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
         </div>
@@ -302,9 +302,9 @@
     });
   </script>
 
-  <!-- SCRIPT FOT TOP AIRING ANIME SLIDER -->
+  <!-- SCRIPT FOR TRENDING ANIME SLIDER -->
   <script>      
-    fetch('https://api.jikan.moe/v4/seasons/now')
+    fetch('https://api.jikan.moe/v4/anime?sfw&status=airing&order_by=rank&order_by=popularity')
     .then((res) => {
       return res.json();
     }).then((data) => {console.log(data);

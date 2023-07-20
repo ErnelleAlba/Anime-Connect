@@ -119,10 +119,10 @@ header.scrolled {
 }
 
 #sidebar-icon > button > #top-line {
-  transform: translate(-50%, -20px);
+  transform: translate(-50%, -18px);
 }
 #sidebar-icon > button > #bot-line {
-  transform: translate(-50%, 15px);
+  transform: translate(-50%, 13px);
 }
 
 /* BURGER-MENU ICON ANIMATION */
@@ -406,7 +406,7 @@ header > .navigation-menu > .showmenu {
 
 /* CAROUSEL IMG FOR DESKTOP VIEW */
 .c-md-img {
-  margin-right: 100px;
+  margin-right: 118px;
   object-fit: contain;
   object-position: 0 -270px;
   place-self: end;
@@ -492,13 +492,13 @@ header > .navigation-menu > .showmenu {
 }
 
 .carousel-control-prev {
-  right: 65px;
+  right: 62px;
   left: auto;
   top: 80% !important;
 }
 
 .carousel-control-next {
-  right: 65px;
+  right: 62px;
 }
 
 #carouselInterval > .carousel-control-prev:hover,
