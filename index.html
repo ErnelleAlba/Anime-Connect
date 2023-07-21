@@ -14,7 +14,7 @@
   <title>AnimeConnect</title>
 </head>
 <body>
-  <!-- HEADER -->
+<!--------- HEADER --------->
   <header class="d-flex justify-content-start">
     <!-- SIDEBAR NAVIGATION MENU -->
     <div class="navigation-menu">
@@ -53,27 +53,26 @@
     <div class="bg-light d-none d-xl-block" id="search-content">
       <form action="/search" class="d-flex">
         <input class="form-control search-input" type="search" id="search-bar" placeholder="Search anime..." aria-label="Search">
-          <button type="submit" class="btn btn-light" id="search-icon-btn"><i class="fa-solid fa-magnifying-glass text-dark"></i></button>
-          <a href="#anime-list-page" class="text-uppercase text-light text-decoration-none" id="filter-btn">Filter</a>
+        <button type="submit" class="btn btn-light" id="search-icon-btn"><i class="fa-solid fa-magnifying-glass text-dark"></i></button>
+        <a href="#anime-list-page" class="text-uppercase text-light text-decoration-none" id="filter-btn">Filter</a>
       </form>
     </div>
     <!-- SEARCH BAR FOR MOBILE VIEW -->
     <div>
-      <button  class="search-logo" >
-        <i class="fa-solid fa-magnifying-glass fa-xl"></i>
-      </button>      
+      <button  class="search-logo" ><i class="fa-solid fa-magnifying-glass fa-xl"></i></button>      
     </div>
     <div class="search-bar-mobile">
       <form action="/search" class="d-flex">
         <input class="form-control search-input" type="search" id="search-bar" placeholder="Search anime..." aria-label="Search">
-          <button type="submit" class="btn btn-light" id="search-icon-btn"><i class="fa-solid fa-magnifying-glass text-dark"></i></button>
-          <a href="#anime-list-page" class="text-uppercase text-light text-decoration-none" id="filter-btn">Filter</a>
+        <button type="submit" class="btn btn-light" id="search-icon-btn"><i class="fa-solid fa-magnifying-glass text-dark"></i></button>
+        <a href="#anime-list-page" class="text-uppercase text-light text-decoration-none" id="filter-btn">Filter</a>
       </form>
     </div>
   </header>
 
+<!--------- MAIN --------->
   <main>
-    <!-- CAROUSEL HERO BANNER -->
+  <!-- CAROUSEL HERO BANNER -->
     <div id="carouselInterval" class="carousel slide mb-5" data-bs-ride="carousel">
       <!-- INDICATORS FOR MOBILE VIEW -->
       <div class="carousel-indicators d-flex d-xl-none flex-column" id="carousel-indicators">
@@ -87,7 +86,8 @@
         <button type="button" data-bs-target="#carouselInterval" data-bs-slide-to="7" aria-label="Slide 8"></button>
         <button type="button" data-bs-target="#carouselInterval" data-bs-slide-to="8" aria-label="Slide 9"></button>
       </div>
-      <!-- CAROUSEL SLIDES -->
+<!------ CAROUSEL SLIDES ------>
+    <!-- CAROUSEL SLIDE 1 -->
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="5000" id="carousel-item">
           <div class="carousel-cover">
@@ -112,7 +112,7 @@
             </div>
           </div>
         </div>
-
+      <!-- CAROUSEL SLIDE 2 -->
         <div class="carousel-item" data-bs-interval="5000" id="carousel-item">
           <div class="carousel-cover">
             <div class="d-grid carousel-cover-img">
@@ -136,7 +136,7 @@
             </div>
           </div>
         </div>
-
+      <!-- CAROUSEL SLIDE 3 -->
         <div class="carousel-item" data-bs-interval="5000" id="carousel-item">
           <div class="carousel-cover">
             <div class="d-grid carousel-cover-img">
@@ -160,7 +160,7 @@
             </div>
           </div>
         </div>
-
+      <!-- CAROUSEL SLIDE 4 -->
         <div class="carousel-item" data-bs-interval="5000" id="carousel-item">
           <div class="carousel-cover">
             <div class="d-grid carousel-cover-img">
@@ -184,7 +184,7 @@
             </div>
           </div>
         </div>
-        
+      <!-- CAROUSEL SLIDE 5 -->
         <div class="carousel-item" data-bs-interval="5000" id="carousel-item">
           <div class="carousel-cover">
             <div class="d-grid carousel-cover-img">
@@ -208,7 +208,7 @@
             </div>
           </div>
         </div>
-
+      <!-- CAROUSEL SLIDE 6 -->
         <div class="carousel-item" data-bs-interval="5000" id="carousel-item">
           <div class="carousel-cover">
             <div class="d-grid carousel-cover-img">
@@ -232,7 +232,7 @@
             </div>
           </div>
         </div>
-
+      <!-- CAROUSEL SLIDE 7 -->
         <div class="carousel-item" data-bs-interval="5000" id="carousel-item">
           <div class="carousel-cover">
             <div class="d-grid carousel-cover-img">
@@ -256,7 +256,7 @@
             </div>
           </div>
         </div>
-
+      <!-- CAROUSEL SLIDE 8 -->
         <div class="carousel-item" data-bs-interval="5000" id="carousel-item">
           <div class="carousel-cover">
             <div class="d-grid carousel-cover-img">
@@ -280,7 +280,7 @@
             </div>
           </div>
         </div>
-
+      <!-- CAROUSEL SLIDE 9 -->
         <div class="carousel-item" data-bs-interval="5000" id="carousel-item">
           <div class="carousel-cover">
             <div class="d-grid carousel-cover-img">
@@ -304,8 +304,8 @@
             </div>
           </div>
         </div>
-
       </div>
+      <!-- CAROUSEL NAVIGATION BUTTONS -->
       <button class="carousel-control-prev d-none d-xl-block" type="button" data-bs-target="#carouselInterval" data-bs-slide="prev">
         <i class="fa-solid fa-angle-left" aria-hidden="true" style="font-weight: 900;"></i>
         <span class="visually-hidden">Previous</span>
@@ -315,13 +315,12 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-
+  <!-- TRENDING ANIME SECTION -->
     <section id="trending-anime-section">
       <h3 class="text-capitalize" id="section-label">Trending Anime</h3>
       <!-- TRENDING ANIME SLIDER -->
       <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-        </div>
+        <div class="swiper-wrapper"></div>
       </div>
       <!-- SLIDER NAVIGATION -->
       <div class="trending-anime-navigation">
@@ -329,10 +328,8 @@
         <div class="swiper-button-next" id="#slide-next-button"><i class="fa-solid fa-angle-right"></i></div>
       </div>
     </section>
-
-
   </main>
-
+<!--------- FOOTER --------->
   <footer>
     <div class="d-flex flex-column align-items-center mt-5 mb-3" id="footer-wrapper">
       <div class="d-flex">
@@ -340,10 +337,8 @@
         <p class="my-0 mx-3">|</p> 
         <p class="my-0">All Rights Reserved</p>
       </div>
-
       <!-- USED API LINK -->
       <p class="my-1">Used API: <a href="https://jikan.moe/" class="ms-2" id="api-link" target="_blank">Jikan REST API</a></p>        
-      
       <!-- DEVELOPER'S NAMES -->
       <p class="mb-1">Develop by:</p>
       <div class="d-flex">
@@ -351,7 +346,6 @@
         <p class="my-0 col-1">|</p> 
         <p class="my-0 ms-3 col-5">Ederick Bañez</p>
       </div>
-
       <!-- DEVELOPER'S LINKS -->
       <div class="d-flex mt-2">
         <div class="me-3 col-6">
@@ -367,187 +361,24 @@
     </div>
   </footer>
   
-  <!-- HEADER ON SCROLL SCRIPT -->
-  <script type="text/javascript">
-    document.addEventListener('scroll', () =>{
-      const header = document.querySelector('header');
-      if (window.scrollY > 0) {
-        header.classList.add('scrolled');
-      } else {
-        header.classList.remove('scrolled');
-      };
-    });
-  </script>
-
-  <!-- SIDEBAR MENU SCRIPT -->
-  <script>
-    let menu = document.getElementById("menu");
-    menu.onclick = function() {
-      menu.classList.toggle("openmenu");
-    }
-  </script>
-
-  <!-- SIDEBAR NAVIGATION MENU SCRIPT -->
-  <script>
-    let burgerBtn = document.querySelector('.burger-menu');
-
-    burgerBtn.addEventListener('click', function() {
-      let sidebarMenu = document.querySelector('.sidebar-menu');
-      let blurBgFilter = document.querySelector('.blur-bg');
-      sidebarMenu.classList.toggle('showmenu');
-      blurBgFilter.classList.toggle('active');
-      document.body.classList.toggle('disable-scroll');
-    });
-  </script>
-
-  <!--SEARCH BAR MOBILE SCRIPT  -->
-  <script>
-    let searchBtn = document.querySelector('.search-logo');
-    searchBtn.addEventListener('click', function() {
-      let searchForm = document.querySelector('.search-bar-mobile');
-      searchForm.classList.toggle('showsearch');
-    });
-  </script>
-
-  <!-- CAROUSEL CONTENT SCRIPT -->
-  <script>
-    fetch('https://api.jikan.moe/v4/seasons/now?sfw')
-    .then((res) => {
-      return res.json();
-    }).then((data) => {
-      const carouselData = data.data;
-      // SLIDE 1
-      document.getElementById('img-slide-1').src = `${carouselData[0].images.webp.large_image_url}`;
-      document.getElementById('img-slide-1-s').src = `${carouselData[0].images.webp.large_image_url}`;
-      document.getElementById('title-slide-1').textContent = `${carouselData[0].title}`;
-      document.getElementById('type-slide-1').textContent = `${carouselData[0].type}`;
-      document.getElementById('duration-slide-1').textContent = `${carouselData[0].duration.split("per")[0]}`;
-      document.getElementById('aired-date-slide-1').textContent = `${carouselData[0].aired.string.split("to")[0]}`;
-      document.getElementById('synopsis-slide-1').textContent = `${carouselData[0].synopsis}`;
-      // SLIDE 2
-      document.getElementById('img-slide-2').src = `${carouselData[1].images.webp.large_image_url}`;
-      document.getElementById('img-slide-2-s').src = `${carouselData[1].images.webp.large_image_url}`;
-      document.getElementById('title-slide-2').textContent = `${carouselData[1].title}`;
-      document.getElementById('type-slide-2').textContent = `${carouselData[1].type}`;
-      document.getElementById('duration-slide-2').textContent = `${carouselData[1].duration.split("per")[0]}`;
-      document.getElementById('aired-date-slide-2').textContent = `${carouselData[1].aired.string.split("to")[0]}`;
-      document.getElementById('synopsis-slide-2').textContent = `${carouselData[1].synopsis}`;
-      // SLIDE 3
-      document.getElementById('img-slide-3').src = `${carouselData[2].images.webp.large_image_url}`;
-      document.getElementById('img-slide-3-s').src = `${carouselData[2].images.webp.large_image_url}`;
-      document.getElementById('title-slide-3').textContent = `${carouselData[2].title}`;
-      document.getElementById('type-slide-3').textContent = `${carouselData[2].type}`;
-      document.getElementById('duration-slide-3').textContent = `${carouselData[2].duration.split("per")[0]}`;
-      document.getElementById('aired-date-slide-3').textContent = `${carouselData[2].aired.string.split("to")[0]}`;
-      document.getElementById('synopsis-slide-3').textContent = `${carouselData[2].synopsis}`;
-      // SLIDE 4
-      document.getElementById('img-slide-4').src = `${carouselData[3].images.webp.large_image_url}`;
-      document.getElementById('img-slide-4-s').src = `${carouselData[3].images.webp.large_image_url}`;
-      document.getElementById('title-slide-4').textContent = `${carouselData[3].title}`;
-      document.getElementById('type-slide-4').textContent = `${carouselData[3].type}`;
-      document.getElementById('duration-slide-4').textContent = `${carouselData[3].duration.split("per")[0]}`;
-      document.getElementById('aired-date-slide-4').textContent = `${carouselData[3].aired.string.split("to")[0]}`;
-      document.getElementById('synopsis-slide-4').textContent = `${carouselData[3].synopsis}`;
-      // SLIDE 5
-      document.getElementById('img-slide-5').src = `${carouselData[4].images.webp.large_image_url}`;
-      document.getElementById('img-slide-5-s').src = `${carouselData[4].images.webp.large_image_url}`;
-      document.getElementById('title-slide-5').textContent = `${carouselData[4].title}`;
-      document.getElementById('type-slide-5').textContent = `${carouselData[4].type}`;
-      document.getElementById('duration-slide-5').textContent = `${carouselData[4].duration.split("per")[0]}`;
-      document.getElementById('aired-date-slide-5').textContent = `${carouselData[4].aired.string.split("to")[0]}`;
-      document.getElementById('synopsis-slide-5').textContent = `${carouselData[4].synopsis}`;
-      // SLIDE 6
-      document.getElementById('img-slide-6').src = `${carouselData[5].images.webp.large_image_url}`;
-      document.getElementById('img-slide-6-s').src = `${carouselData[5].images.webp.large_image_url}`;
-      document.getElementById('title-slide-6').textContent = `${carouselData[5].title}`;
-      document.getElementById('type-slide-6').textContent = `${carouselData[5].type}`;
-      document.getElementById('duration-slide-6').textContent = `${carouselData[5].duration.split("per")[0]}`;
-      document.getElementById('aired-date-slide-6').textContent = `${carouselData[5].aired.string.split("to")[0]}`;
-      document.getElementById('synopsis-slide-6').textContent = `${carouselData[5].synopsis}`;
-      // SLIDE 7
-      document.getElementById('img-slide-7').src = `${carouselData[6].images.webp.large_image_url}`;
-      document.getElementById('img-slide-7-s').src = `${carouselData[6].images.webp.large_image_url}`;
-      document.getElementById('title-slide-7').textContent = `${carouselData[6].title}`;
-      document.getElementById('type-slide-7').textContent = `${carouselData[6].type}`;
-      document.getElementById('duration-slide-7').textContent = `${carouselData[6].duration.split("per")[0]}`;
-      document.getElementById('aired-date-slide-7').textContent = `${carouselData[6].aired.string.split("to")[0]}`;
-      document.getElementById('synopsis-slide-7').textContent = `${carouselData[6].synopsis}`;
-      // SLIDE 8
-      document.getElementById('img-slide-8').src = `${carouselData[7].images.webp.large_image_url}`;
-      document.getElementById('img-slide-8-s').src = `${carouselData[7].images.webp.large_image_url}`;
-      document.getElementById('title-slide-8').textContent = `${carouselData[7].title}`;
-      document.getElementById('type-slide-8').textContent = `${carouselData[7].type}`;
-      document.getElementById('duration-slide-8').textContent = `${carouselData[7].duration.split("per")[0]}`;
-      document.getElementById('aired-date-slide-8').textContent = `${carouselData[7].aired.string.split("to")[0]}`;
-      document.getElementById('synopsis-slide-8').textContent = `${carouselData[7].synopsis}`;
-      // SLIDE 9
-      document.getElementById('img-slide-9').src = `${carouselData[8].images.webp.large_image_url}`;
-      document.getElementById('img-slide-9-s').src = `${carouselData[8].images.webp.large_image_url}`;
-      document.getElementById('title-slide-9').textContent = `${carouselData[8].title}`;
-      document.getElementById('type-slide-9').textContent = `${carouselData[8].type}`;
-      document.getElementById('duration-slide-9').textContent = `${carouselData[8].duration.split("per")[0]}`;
-      document.getElementById('aired-date-slide-9').textContent = `${carouselData[8].aired.string.split("to")[0]}`;
-      document.getElementById('synopsis-slide-9').textContent = `${carouselData[8].synopsis}`;
-      }
-    );
-  </script>
-
-  <!-- SCRIPT FOR TRENDING ANIME SLIDER -->
-  <script>      
-    fetch('https://api.jikan.moe/v4/anime?sfw&status=airing&order_by=rank&order_by=popularity')
-    .then((res) => {
-      return res.json();
-    }).then((data) => {
-      const animeData = data.data;
-      const swiperWrapper = document.querySelector('.swiper-wrapper');
-      
-      for (let i = 0; i < 20; i++) {
-        const anime = animeData[i];
-        const slideDiv = document.createElement('div');
-        let num = i+1;
-        if (num <= 9){            
-          num = String(num).padStart(2, '0');
-        }
-
-        slideDiv.classList.add('swiper-slide'); 
-        slideDiv.innerHTML = `
-              <div class="anime-title dynamic-name">
-                ${anime.title}
-              </div>
-              <div class="number">${num}</div>
-              <a href="#">
-                <img src="${anime.images.jpg.image_url}">
-              </a>
-              `;
-        swiperWrapper.appendChild(slideDiv);
-      }
-    });
-  </script>
-  
-  <!-- SWIPER JS -->
+  <!-- HEADER ON SCROLL -->
+  <script src="./js/headerOnScroll.js"></script>
+  <!-- SIDEBAR MENU -->
+  <script src="./js/sidebarMenu.js"></script>
+  <!-- SIDEBAR NAVIGATION MENU -->
+  <script src="./js/burgerBtn.js"></script>
+  <!--SEARCH BAR MOBILE  -->
+  <script src="./js/searchBarOnMobile.js"></script>
+  <!-- CAROUSEL CONTENT -->
+  <script src="./js/caroueselContent.js"></script>
+  <!-- TRENDING ANIME SLIDER -->
+  <script src="./js/trendingAnimeContent.js"></script>
+  <!-- SWIPER OFFICIAL JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>  
     <!-- INITIALIZE SWIPER-->
-  <script>
-    const swiper = new Swiper('.mySwiper', {
-      slidesPerView: 'auto',
-      spaceBetween: 8,
-      // Navigation arrows
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-
-  </script>
-
+  <script src="./js/initializeSwiper.js"></script>
   <!-- SCROLL TO TOP SCRIPT -->
-  <script>
-    function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-  </script>
-  
+  <script src="./js/scrollOnTop.js"></script>
   <!-- BOOTSTRAP 5 -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
 </body>
