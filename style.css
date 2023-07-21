@@ -680,6 +680,53 @@ header > .navigation-menu > .showmenu {
   top: 22px;
 }
 
+/* TABLES STYLING */
+#table-number {
+  color: var(--tc-white);
+  font-size: 25px;
+  font-weight: 600;
+  border-bottom: 4px solid var(--tc-yellow);
+}
+
+.table-item {
+  padding: 1rem 0;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.075);
+}
+
+#table-anime-title {
+  font-weight: var(--fw-600);
+  text-decoration: none;
+  color: var(--tc-white);
+}
+
+#table-anime-title:hover {
+  color: var(--tc-yellow);
+}
+
+#table-details {
+  font-weight: var(--fw-300);
+  line-height: 24px;
+  color: #ddd;
+}
+.dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  display: inline-block;
+  margin: 10px;
+}
+
+#small-poster-img {
+  width: 80px;
+  height: 106px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+#top-airing-table {
+  width: 420px;
+}
 /* FOOTER */
 #github-icon,
 #linkedin-icon,

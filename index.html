@@ -316,7 +316,7 @@
       </button>
     </div>
   <!-- TRENDING ANIME SECTION -->
-    <section id="trending-anime-section">
+    <div id="trending-anime-section" class="my-5">
       <h3 class="text-capitalize" id="section-label">Trending Anime</h3>
       <!-- TRENDING ANIME SLIDER -->
       <div class="swiper mySwiper">
@@ -327,7 +327,26 @@
         <div class="swiper-button-prev"><i class="fa-solid fa-angle-left"></i></div>
         <div class="swiper-button-next" id="#slide-next-button"><i class="fa-solid fa-angle-right"></i></div>
       </div>
-    </section>
+    </div>
+    
+    <div class="container-fluid d-flex mx-5 my-5" id="anime-table-container">
+      <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-xs-12" id="top-airing">
+        <h3 class="text-capitalize" id="section-label">Top Airing</h3>
+        <div>
+          <ul class="list-unstyled" id="top-airing-table"></ul>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-xs-12" id="most-popular">
+        <h3 class="text-capitalize" id="section-label">Most Popular</h3>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-xs-12" id="top-rank">
+        <h3 class="text-capitalize" id="section-label">Top Ranking</h3>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-xs-12" id="most-favorite">
+        <h3 class="text-capitalize" id="section-label">Most Favorite</h3>
+      </div>
+    </div>
+
   </main>
 <!--------- FOOTER --------->
   <footer>
@@ -370,13 +389,15 @@
   <!--SEARCH BAR MOBILE  -->
   <script src="./js/searchBarOnMobile.js"></script>
   <!-- CAROUSEL CONTENT -->
-  <script src="./js/caroueselContent.js"></script>
+  <script src="./js/carouselContent.js"></script>
   <!-- TRENDING ANIME SLIDER -->
   <script src="./js/trendingAnimeContent.js"></script>
   <!-- SWIPER OFFICIAL JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>  
-    <!-- INITIALIZE SWIPER-->
+  <!-- INITIALIZE SWIPER-->
   <script src="./js/initializeSwiper.js"></script>
+  <!-- TOP AIRING ANIME -->
+  <script src="./js/topAiringList.js"></script>
   <!-- SCROLL TO TOP SCRIPT -->
   <script src="./js/scrollOnTop.js"></script>
   <!-- BOOTSTRAP 5 -->
