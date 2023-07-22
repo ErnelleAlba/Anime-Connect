@@ -735,6 +735,15 @@ header > .navigation-menu > .showmenu {
   width: 400px;
   margin: 0 30px;
 }
+
+#view-more-btn {
+  color: var(--tc-white);
+  text-decoration: none;
+}
+
+#view-more-btn:hover {
+  color: var(--tc-yellow);
+}
 /* FOOTER */
 #github-icon,
 #linkedin-icon,

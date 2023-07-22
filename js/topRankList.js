@@ -1,4 +1,4 @@
-setTimeout (lazyLoad,2500);
+setTimeout (lazyLoad,2700);
 
 function lazyLoad () {
   fetch('https://api.jikan.moe/v4/top/anime?sfw')
