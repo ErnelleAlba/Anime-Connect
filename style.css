@@ -755,7 +755,8 @@ header > .navigation-menu > .showmenu {
   color: var(--tc-yellow);
 }
 
-#latest-anime-label {
+#latest-anime-label,
+#upcoming-anime-label {
   margin-left: 0px;
   margin-bottom: 20px;
   color: #ffdd95;
@@ -764,6 +765,10 @@ header > .navigation-menu > .showmenu {
 .card-anime {
   width: calc(16.66% - 1rem);
   margin: 0.7rem 0.5rem;
+}
+
+#card-poster {
+  height: 320px;
 }
 
 #card-poster > a > img {
@@ -792,7 +797,7 @@ header > .navigation-menu > .showmenu {
   color: var(--tc-yellow);
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 749px) {
   #trending-anime-section {
     margin-left: 10px;
   }
@@ -839,6 +844,15 @@ header > .navigation-menu > .showmenu {
     margin-right: 1.8rem;
   }
 
+  #upcoming-anime-container {
+    margin-left: 0.5rem;
+    margin-right: 1.8rem;
+  }
+
+  #card-poster {
+    height: 210px;
+  }
+
   #card-title {
     font-size: 15px;
   }
@@ -859,11 +873,13 @@ header > .navigation-menu > .showmenu {
     font-size: 14px;
   }
 
-  #latest-anime-label {
+  #latest-anime-label,
+  #upcoming-anime-label {
     margin-left: 15px;
   }
 
-  .latest-view-more {
+  .latest-view-more,
+  .upcoming-view-more {
     margin-right: 35px;
   }
 }

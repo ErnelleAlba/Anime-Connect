@@ -1,18 +1,18 @@
-setTimeout (lazyLoad,4900)
+setTimeout (lazyLoad,5900)
 
 function lazyLoad () {
-  fetch('https://api.jikan.moe/v4/seasons/now?sfw')
+  fetch('https://api.jikan.moe/v4/seasons/upcoming?sfw')
   .then((res) => res.json())
   .then((data) => {
-    const latestAnimedata = data.data;
-    const latestAnime = document.getElementById('new-anime-container');
+    const upcomingAnimedata = data.data;
+    const upcomingAnime = document.getElementById('upcoming-anime-container');
 
     for (let i = 0; i < 12; i++) {
-      const newAnime = latestAnimedata[i];
-      const latestAnimeItem = document.createElement('div');
+      const newAnime = upcomingAnimedata[i];
+      const upcomingAnimeItem = document.createElement('div');
       
-      latestAnimeItem.classList.add('card-anime'); 
-      latestAnimeItem.innerHTML = `
+      upcomingAnimeItem.classList.add('card-anime'); 
+      upcomingAnimeItem.innerHTML = `
                 <div id="card-poster">
                   <a href="">
                     <img src="${newAnime.images.webp.large_image_url}" alt="${newAnime.title}"/>
@@ -23,11 +23,11 @@ function lazyLoad () {
                     <div class="d-flex align-content-start gap-1 mt-1" >
                       <div id="card-details">${newAnime.type}</div>
                       <div class="dot"></div>
-                      <div id="card-details">${newAnime.duration.split("per")[0]}</div>
+                      <div id="card-details">${newAnime.aired.string.split("to")[0]}</div>
                     </div>
                 </div>
               `;
-      latestAnime.appendChild(latestAnimeItem);
+      upcomingAnime.appendChild(upcomingAnimeItem);
     }
   });
 }
