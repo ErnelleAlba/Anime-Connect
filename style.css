@@ -497,7 +497,7 @@ header > .navigation-menu > .showmenu {
 .carousel-control-prev {
   right: 62px;
   left: auto;
-  top: 80% !important;
+  top: 82% !important;
 }
 
 .carousel-control-next {
@@ -681,6 +681,10 @@ header > .navigation-menu > .showmenu {
 }
 
 /* TABLES STYLING */
+#anime-table-container {
+  margin: 30px 20px;
+}
+
 #table-number {
   color: var(--tc-white);
   font-size: 25px;
@@ -724,8 +728,12 @@ header > .navigation-menu > .showmenu {
   object-fit: cover;
 }
 
-#top-airing-table {
-  width: 420px;
+#top-airing,
+#most-popular,
+#top-rank,
+#most-favorite {
+  width: 400px;
+  margin: 0 30px;
 }
 /* FOOTER */
 #github-icon,
