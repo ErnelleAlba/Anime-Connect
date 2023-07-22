@@ -16,7 +16,7 @@ function lazyLoad () {
       mostPopularItem.innerHTML = `
               <div class="my-auto me-4" id="table-number">0${num}</div>
               <a href="#">
-                <img src="${mostPopAnime.images.webp.image_url}" id="small-poster-img"/>
+                <img src="${mostPopAnime.images.webp.large_image_url}" id="small-poster-img"/>
               </a>
               <div class="d-flex flex-column my-auto ms-3">
                 <div><a href="#" id="table-anime-title">${mostPopAnime.title}</a></div>

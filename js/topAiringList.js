@@ -13,7 +13,7 @@ fetch('https://api.jikan.moe/v4/anime?sfw&status=airing&order_by=popularity&sort
       tableItem.innerHTML = `
               <div class="my-auto me-4" id="table-number">0${num}</div>
               <a href="#">
-                <img src="${anime.images.webp.image_url}" id="small-poster-img"/>
+                <img src="${anime.images.webp.large_image_url}" id="small-poster-img"/>
               </a>
               <div class="d-flex flex-column my-auto ms-3">
                 <div><a href="#" id="table-anime-title">${anime.title}</a></div>

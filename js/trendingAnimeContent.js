@@ -1,7 +1,6 @@
 fetch('https://api.jikan.moe/v4/anime?sfw&status=airing&order_by=rank&order_by=popularity')
-.then((res) => {
-  return res.json();
-}).then((data) => {
+.then((res) => res.json())
+.then((data) => {
   const animeData = data.data;
   const swiperWrapper = document.querySelector('.swiper-wrapper');
   
@@ -20,7 +19,7 @@ fetch('https://api.jikan.moe/v4/anime?sfw&status=airing&order_by=rank&order_by=p
           </div>
           <div class="number">${num}</div>
           <a href="#">
-            <img src="${anime.images.jpg.image_url}">
+            <img src="${anime.images.webp.large_image_url}" style="width:225px;">
           </a>
           `;
     swiperWrapper.appendChild(slideDiv);

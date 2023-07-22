@@ -1,7 +1,6 @@
 fetch('https://api.jikan.moe/v4/seasons/now?sfw')
-.then((res) => {
-  return res.json();
-}).then((data) => {
+.then((res) => res.json())
+.then((data) => {
   const carouselData = data.data;
   // SLIDE 1
   document.getElementById('img-slide-1').src = `${carouselData[0].images.webp.large_image_url}`;
