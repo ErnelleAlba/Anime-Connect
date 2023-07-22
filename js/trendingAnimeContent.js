@@ -19,7 +19,7 @@ fetch('https://api.jikan.moe/v4/anime?sfw&status=airing&order_by=rank&order_by=p
           </div>
           <div class="number">${num}</div>
           <a href="#">
-            <img src="${anime.images.webp.large_image_url}" style="width:225px;">
+            <img src="${anime.images.webp.large_image_url}" id="swiper-img">
           </a>
           `;
     swiperWrapper.appendChild(slideDiv);

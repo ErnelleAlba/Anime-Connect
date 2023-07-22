@@ -622,6 +622,10 @@ header > .navigation-menu > .showmenu {
   font-weight: 500;
 }
 
+#swiper-img {
+  width: 225px;
+}
+
 .number {
   position: absolute;
   color: #ffdd95;
@@ -789,6 +793,43 @@ header > .navigation-menu > .showmenu {
 }
 
 @media (max-width: 1023px) {
+  #trending-anime-section {
+    margin-left: 10px;
+  }
+
+  .swiper {
+    margin-left: 10px;
+    height: 245px;
+  }
+
+  .swiper-slide {
+    width: 220px;
+  }
+
+  #swiper-img {
+    width: 170px;
+    object-fit: contain;
+  }
+
+  .swiper-slide > .anime-title {
+    bottom: 125px;
+    width: 205px;
+    left: -95px;
+  }
+
+  .trending-anime-navigation > div {
+    height: 40px;
+  }
+
+  .trending-anime-navigation > div.swiper-button-prev {
+    bottom: -70px;
+    left: -90px;
+  }
+
+  .trending-anime-navigation > div.swiper-button-next {
+    bottom: -70px;
+    top: auto;
+  }
   .card-anime {
     width: calc(33.33% - 1rem) !important;
   }
@@ -816,6 +857,14 @@ header > .navigation-menu > .showmenu {
 
   #view-more-btn {
     font-size: 14px;
+  }
+
+  #latest-anime-label {
+    margin-left: 15px;
+  }
+
+  .latest-view-more {
+    margin-right: 35px;
   }
 }
 
