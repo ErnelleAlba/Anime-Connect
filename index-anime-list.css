@@ -22,184 +22,258 @@
 /**********Media Query ***********/
 
 body {
-      background: #242428;
-      color: #fff;
-      height: 100%;
-      margin: 0;  
-    }
+  background: #242428;
+  color: #fff;
+  height: 100%;
+  margin: 0;
+}
 
-    main {
-      height: 100vh;
-      flex-grow: 1;
-      margin-bottom: 80px; /* Adjust the margin as per your footer's height */
+main {
+  height: 100vh;
+  flex-grow: 1;
+  margin-bottom: 80px; /* Adjust the margin as per your footer's height */
+}
 
-    }
+/* HEADER */
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: none;
+  backdrop-filter: blur(10px);
+  display: flex;
+  transition: background-color 0.2s ease-in-out;
+  z-index: 100;
+}
 
-    /* HEADER */
-    header {
-      position: sticky;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 70px;
-      background-color: none;
-      backdrop-filter: blur(10px);
-      display: flex;
-      transition: background-color 0.2s ease-in-out;
-      z-index: 100;
-    }
+#logo > img {
+  width: 10rem;
+  height: 10rem;
+  margin: 1rem 0 0 -4rem;
+}
+#navmenu-wrapper,
+#nav-item,
+#nav-link {
+  position: relative;
+}
 
-    #logo > img {
-      width: 10rem;
-      height: 10rem;
-      margin: 1rem 0 0 -4rem;
+header.scrolled {
+  background-color: rgb(36, 36, 40, 0.7);
+  backdrop-filter: blur(10px);
+}
 
-    }
-    #navmenu-wrapper,
-    #nav-item,
-    #nav-link {
-      position: relative;
-    }
+header > div {
+  width: 1750px;
+}
 
-    header.scrolled {
-      background-color: rgb(36, 36, 40, 0.7);
-      backdrop-filter: blur(10px);
-    }
+#nav-title {
+  font-weight: var(--fw-600);
+  color: var(--tc-white);
+}
 
-    header > div {
-      width: 1750px;
-    }
+#nav-title:hover {
+  color: var(--tc-yellow);
+}
 
-    #nav-title {
-      font-weight: var(--fw-600);
-      color: var(--tc-white);
-    }
+#search-content {
+  position: relative;
+  width: 400px;
+}
 
-    #nav-title:hover {
-      color: var(--tc-yellow);
-    }
+#search-bar {
+  border: none;
+  height: 40px;
+}
 
-    #search-content {
-      position: relative;
-      width: 400px;
-    }
+#search-icon-btn {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
 
-    #search-bar {
-      border: none;
-      height: 40px;
-    }
+#filter-btn {
+  height: 26px;
+  cursor: pointer;
+  line-height: 26px;
+  font-size: 0.8em;
+  font-weight: var(--fw-600);
+  background: var(--bg-gray);
+  padding: 0 6px;
+  border-radius: 3px;
+  margin: 7px;
+  z-index: 3;
+  cursor: pointer;
+}
 
-    #search-icon-btn {
-      width: 40px;
-      height: 40px;
-      cursor: pointer;
-    }
+#filter-btn:hover {
+  opacity: 0.8;
+}
+/***********F I L T E R - R E S U L T************/
+#Filtering {
+  color: #ffdd95;
+  font-size: larger;
+}
+/******S O R T   M E N U********/
+.sortMenu {
+  padding: 1rem;
+}
+#dropsdown {
+  border-radius: 10px;
+}
+#sortHome {
+  background-color: transparent;
+  display: flex;
+  justify-content: baseline;
+  padding: 1rem;
+}
 
-    #filter-btn {
-      height: 26px;
-      cursor: pointer;
-      line-height: 26px;
-      font-size: 0.8em;
-      font-weight: var(--fw-600);
-      background: var(--bg-gray);
-      padding: 0 6px;
-      border-radius: 3px;
-      margin: 7px;
-      z-index: 3;
-      cursor: pointer;
-    }
+#Filtering {
+  display: flex;
+  justify-content: space-between;
+}
+.custom-button {
+  background-color: #ffdd95;
+  margin-left: 3.2rem;
+}
 
-    #filter-btn:hover {
-      opacity: 0.8;
-    }
-    /***********F I L T E R - R E S U L T************/
-    #Filtering {
-      color: #ffdd95;
-      font-size: larger;
-    }
-    /******S O R T   M E N U********/     
-    .sortMenu {
-      padding: 1rem;
-    }
-    #dropsdown {
-      border-radius: 10px;
-    }
-    #sortHome {
-      background-color: transparent;
-      display: flex;
-      justify-content: baseline;
-      padding: 1rem;
-    }
-    
-    #Filtering {
-      display: flex;
-      justify-content: space-between;
-    }
-    .custom-button {
-      background-color: #ffdd95;
-      margin-left: 3.2rem;
-    }
-    
-    /******C A R D********/
-    .anime-card-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px; /* Adjust the gap as needed */
-    }
-    
-    .anime-card {
-      width: 200px; /* Adjust the width as needed */
-      background-color: rgba(24, 24, 28, 0.8);
-      color: rgb(243, 232, 232);
-      padding: 10px;
-      border-radius: 8px;
-      text-decoration: #ffdd95;
-    }
+/******C A R D********/
+.result {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Adjust the gap as needed */
+}
 
-    section {
-      width: 100%;
-      height: auto;
-    }
+.anime-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Adjust the gap as needed */
+}
 
-    .card-img-top {
-      height: 18rem;
-      object-fit: cover;
-    }
-    .anime-card .Ratings {
-      font-size: 0.8rem;
-      color: #757575;
-    }
-    .anime-card .card-body {
-      background-color: transparent; /* Set the background color of the padding to transparent */
-    }
-    .anime-card .card-title {
-      position: relative; /* Ensure the image is positioned relative to its parent */
-      color: rgb(232, 232, 240);
-      font-size: 0.9rem;  
-      white-space: nowrap; /* Prevent the text from wrapping to the next line */
-      overflow: hidden; /* Hide any overflowing text */
-      text-overflow: ellipsis; /* Display an ellipsis (...) when the title is truncated */
+.anime-card {
+  width: 200px; /* Adjust the width as needed */
+  background-color: rgba(24, 24, 28, 0.8);
+  color: rgb(243, 232, 232);
+  padding: 10px;
+  border-radius: 8px;
+  text-decoration: #ffdd95;
+}
 
-    }
-    .anime-card .card-img-top::after {
-      content: ''; /* Create a pseudo-element to serve as the gradient overlay */
-      position: absolute; /* Position the pseudo-element on top of the image */
-      bottom: 0; /* Place it at the bottom of the image */
-      left: 0; /* Stretch the pseudo-element to cover the entire image */
-      width: 100%;
-      height: 50%; /* Adjust the height of the blur effect as needed */
-      background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)); /* Set the gradient colors and direction */
-    }
+section {
+  width: 100%;
+  height: auto;
+}
 
-    .anime-card .card {
-      box-shadow: none; /* Remove the box-shadow */
-      border: none; /* Remove any border */
-      background-color: rgba(24, 24, 28, 0.8); /* Set the background color for the whole card */
+.card-img-top {
+  height: 18rem;
+  object-fit: cover;
+}
+.anime-card .Ratings {
+  font-size: 0.8rem;
+  color: #757575;
+}
 
-    }
-    .Ratings {
-      display: flex;
-    }
+.anime-card .card-body {
+  background-color: transparent; /* Set the background color of the padding to transparent */
+}
+
+.card {
+  width: 100%;
+  height: 375px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: block;
+  background: none;
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: 1rem 1rem;
+  width: 249px;
+  height: 100px;
+}
+
+.detail {
+  color: #aaa;
+  font-size: 0.9em;
+  margin-top: 10px;
+}
+
+.description {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  display: inline-block;
+  margin: 3px 6px;
+}
+
+.fdi-item {
+  white-space: nowrap;
+}
+
+h3 {
+  color: #fff;
+  text-decoration: none !important;
+  outline: 0;
+  -moz-outline: none;
+}
+
+.title {
+  font-size: 1em;
+  line-height: 1.3em;
+  margin: 0;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.anime-card .card-title {
+  position: relative; /* Ensure the image is positioned relative to its parent */
+  color: rgb(232, 232, 240);
+  font-size: 0.9rem;
+  white-space: nowrap; /* Prevent the text from wrapping to the next line */
+  overflow: hidden; /* Hide any overflowing text */
+  text-overflow: ellipsis; /* Display an ellipsis (...) when the title is truncated */
+}
+.anime-card .card-img-top::after {
+  content: ""; /* Create a pseudo-element to serve as the gradient overlay */
+  position: absolute; /* Position the pseudo-element on top of the image */
+  bottom: 0; /* Place it at the bottom of the image */
+  left: 0; /* Stretch the pseudo-element to cover the entire image */
+  width: 100%;
+  height: 50%; /* Adjust the height of the blur effect as needed */
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 1)
+  ); /* Set the gradient colors and direction */
+}
+
+.anime-card .card {
+  box-shadow: none; /* Remove the box-shadow */
+  border: none; /* Remove any border */
+  background-color: rgba(
+    24,
+    24,
+    28,
+    0.8
+  ); /* Set the background color for the whole card */
+}
+.Ratings {
+  display: flex;
+}
 
 /* FOOTER */
 #github-icon,
@@ -225,4 +299,83 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.div_wrapper {
+  width: calc(16.66% - 1rem);
+  margin: 0.7rem 0.5rem;
+  position: relative;
+}
+
+.div_image {
+  border-radius: 0;
+  padding-bottom: 140%;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  padding-bottom: 148%;
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: block;
+}
+
+.film_list .film_list-wrap .flw-item .film-detail {
+  color: #aaa;
+  font-size: 0.9em;
+}
+
+.film_list .film_list-wrap .flw-item .film-detail .film-name {
+  font-size: 1em;
+  line-height: 1.3em;
+  margin: 0;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.descriptions {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  height: 100%;
+  transition: all 0.7s ease-in-out;
+  padding: 20px;
+  box-sizing: border-box;
+  clip-path: circle(0% at 100% 100%);
+}
+.card:hover .descriptions {
+  left: 0px;
+  transition: all 0.7s ease-in-out;
+  clip-path: circle(75%);
+}
+.card:hover {
+  transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+  transform: scale(0.97);
+}
+.card:hover img {
+  transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+  transform: scale(1.6) rotate(20deg);
+  filter: blur(3px);
+}
+.card h4 {
+  color: #ff3838;
+  letter-spacing: 1px;
+  margin: 0px;
+}
+.card p {
+  line-height: 24px;
+  height: 70%;
+  color: #242428;
+  font-size: 14px;
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
