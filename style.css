@@ -797,6 +797,14 @@ header > .navigation-menu > .showmenu {
   color: var(--tc-yellow);
 }
 
+#main-side-area {
+  width: 23%;
+  right: 0;
+  top: 2190px;
+  padding-left: 30px;
+  position: absolute;
+}
+
 @media (max-width: 749px) {
   #trending-anime-section {
     margin-left: 10px;

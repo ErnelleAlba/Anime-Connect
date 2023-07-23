@@ -1,4 +1,4 @@
-setTimeout (lazyLoad,5900)
+setTimeout (lazyLoad,6900)
 
 function lazyLoad () {
   fetch('https://api.jikan.moe/v4/seasons/upcoming?sfw')
