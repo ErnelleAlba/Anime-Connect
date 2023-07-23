@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- BOOTSTRAP 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- STYLE CSS -->
+  <link rel="stylesheet" href="./index-anime-list.css">
+  <title>Anime-list</title>
+</head>
+<body class="wrapper d-flex flex-column">
+  <!-- HEADER -->
+  <header class="d-flex justify-content-center align-items-center">
+    <div>
+      <nav class="navbar navbar-expand-lg">
+        <!-- WEBSITE LOGO -->
+        <a href="./index.html" class="navbar-brand text-decoration-none text-uppercase text-light ms-5" id="logo">
+          <img src="./multimedia/anime-connect-logo.png">
+        </a>  
+        <!-- NAVIGATION BURGER ICON -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span><i class="fa-solid fa-bars" style="color: #ffffff;"></i></span>
+        </button>
+
+        <!-- NAVIGATION MENU -->
+        <div class="collapse navbar-collapse justify-content-start" >
+          <ul class="navbar-nav gap-4" id="navmenu-wrapper">
+            <li class="nav-item" id="nav-item"><a href="./index.html" class="nav-link text-uppercase" id="nav-link"><span id="nav-title">Home</span></a></li>
+            <li class="nav-item" id="nav-item"><a href="#" class="nav-link text-uppercase" id="nav-link"><span id="nav-title">Anime List</span></a></li>
+            <li class="nav-item" id="nav-item"><a href="#" class="nav-link text-uppercase" id="nav-link"><span id="nav-title">Release Schedule</span></a></li>
+          </ul>
+        </div>
+        
+        <!-- SEARCH BAR -->
+        <div class="bg-light" id="search-content" >
+          <form id="form" class="d-flex">
+            <input class="form-control search-input" type="search" id="search" placeholder="Search anime..." aria-label="Search">
+            <!-- <button type="submit" class="btn btn-light" id="search-icon-btn"><i class="fa-solid fa-magnifying-glass text-dark"></i></button>
+            <a href="#anime-list-page" class="text-uppercase text-light text-decoration-none" id="filter-btn">Filter</a> -->
+          </form>
+        </div>
+      </nav>
+    </div>     
+  </header>
+
+  <main class="flex-grow-1">
+    <nav class="sortMenu container">
+      <div class="container" id="sortHome">
+        Home 
+        <ul>
+          <li>Filter</li> 
+        </ul>
+      </div>
+      <!------------------- Drop down filter -------------->
+      <div class="d-flex justify-content-center">
+        <div class="col-12" id="dropsdown">
+            <div class="row">
+              <div class="dropdown dropdown-menu-end col-sm-12 col-md-2 d-flex justify-content-sm-center" id="types">
+                <select class="btn btn-outline-light dropdown-toggle" id="type">
+                  <option class="dropdown-item" value="tv">Tv</option>
+                  <option class="dropdown-item" value="movie">Movie</option>
+                  <option class="dropdown-item" value="ova">Ova</option>
+                  <option class="dropdown-item" value="special">Special</option>
+                  <option class="dropdown-item" value="ona">Ona</option>
+                  <option class="dropdown-item" value="music">Music</option>
+                </select>
+              </div>
+              <div class="dropdown dropdown-menu-end col-sm-12 col-md-3 d-flex justify-content-sm-center"  id="statuss">
+                <select class="btn btn-outline-light dropdown-toggle" id="status">
+                  <option class="dropdown-item" value="airing">Airing</option>
+                  <option class="dropdown-item" value="complete">Complete</option>
+                  <option class="dropdown-item" value="upcoming">Upcoming</option>
+                </select>
+              </div>
+
+              <div class="dropdown dropdown-menu-end col-sm-12 col-md-4 d-flex justify-content-sm-center" id="ratingss">
+                <select class="btn btn-outline-light dropdown-toggle" id="ratings">
+                  <option class="dropdown-item" value="g">All Ages</option>
+                  <option class="dropdown-item" value="pg">Parental Guidance</option>
+                  <option class="dropdown-item" value="pg13">+13</option>
+                  <option class="dropdown-item" value="r17">R-17 (Violence & Profanity)</option>
+                  <option class="dropdown-item" value="r">R+</option>
+                  <option class="dropdown-item" value="rx">X - Rated</option>
+                </select>
+              </div>
+
+              <div class="dropdown dropdown-menu-end col-sm-12 col-md-3 d-flex justify-content-sm-center" id="orders">
+                <select class="btn btn-outline-light dropdown-toggle" id="order">
+                  <option class="dropdown-item" value="asc">Ascending</option>
+                  <option class="dropdown-item" value="desc">Descending</option>
+                </select>
+
+              </div>
+            </div>
+            <br>
+            <div class="container" id="filterbot">
+              <button type="submit" id="filter" class="btn btn-outline-light">Filter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <br><br>
+    <div class="container" id="Filtering">
+      <div>Filter Results</div>
+      <div id="result"></div>
+    </div>
+    <br>
+    <!--------------------------C A R D----------------------------->
+    <div class="anime-card-container container " id="content">
+    </div>
+    <aside>
+
+    </aside>
+  </main>
+    <footer>
+    <div class="d-flex flex-column align-items-center mt-5 mb-3" id="footer-wrapper">
+      <div class="d-flex">
+        <p class="my-0">&copy; 2023 AnimeConnect</p>
+        <p class="my-0 mx-3">|</p> 
+        <p class="my-0">All Rights Reserved</p>
+      </div>
+
+      <!-- USED API LINK -->
+      <p class="my-1">Used API: <a href="https://jikan.moe/" class="ms-2" id="api-link" target="_blank">Jikan REST API</a></p>        
+      
+      <!-- DEVELOPER'S NAMES -->
+      <p class="mb-1">Develop by:</p>
+      <div class="d-flex">
+        <p class="my-0 me-3 col-6">John Ernelle Alba</p>
+        <p class="my-0 col-1">|</p> 
+        <p class="my-0 ms-3 col-5">Ederick Bañez</p>
+      </div>
+
+      <!-- DEVELOPER'S LINKS -->
+      <div class="d-flex mt-2">
+        <div class="me-3 col-6">
+          <a href="https://github.com/ErnelleAlba" id="github-icon" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a>
+          <a href="https://www.linkedin.com/in/john-ernelle-alba-20509527a/" id="linkedin-icon" target="_blank"><i class="fa-brands fa-linkedin fa-xl ms-3"></i></a>
+        </div>
+        <p class="my-0 col-1">|</p> 
+        <div class="ms-3 col-5">
+          <a href="https://github.com/ESBanez" id="github-icon" target="_blank"><i class="fa-brands fa-github fa-xl""></i></a>
+          <a href="" id="linkedin-icon" target="_blank"><i class="fa-brands fa-linkedin fa-xl ms-3"></i></a>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+
+  <script src="index-anime-list.js"></script>
+
+  <!-- BOOTSTRAP 5 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
+</body>
+</html>
