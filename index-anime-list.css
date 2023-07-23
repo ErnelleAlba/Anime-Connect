@@ -363,8 +363,8 @@ footer {
   transform: scale(1.6);
   filter: blur(3px);
 }
-.card h4 {
-  color: #ff3838;
+.card h6 {
+  color: #ffdd95;
   letter-spacing: 1px;
   margin: 0px;
 }

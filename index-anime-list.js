@@ -38,28 +38,28 @@ function showMovies(movies) {
 
     movieEl.innerHTML = `<div class="card">
 	<div class="card-body">
-	<div>
-		<img src="${movie.images.jpg.image_url}" alt="" class="card-img-top">
-	</div>
-	<div class="detail">
-		
-		<div class="description">
-			  <h5>${movie.title}</h5>
-			<span class="fdi-item">Movie</span>
-			<span class="dot"></span>
-			<span class="fdi-item fdi-duration">90m</span>
-	
-		   </div>
-	  </div>
-			  <div class="descriptions">
+		<div>
+			<img src="${movie.images.jpg.image_url}" alt="" class="card-img-top">
+		</div>
+		<div class="detail">
+			<div class="description">
+				<div>
+					<h6>${movie.title}</h6s>
+				s</div>
+				<span class="fdi-item">Movie</span>
+				<span class="dot"></span>
+				<span class="fdi-item fdi-duration">90m</span>
+			</div>
+		</div>
+			<div class="descriptions">
 				<div class="ellipsis">
-				  <p>
-				  ${movie.synopsis}
-				  </p>
-				  
-			  </div>
-			  </div>
-</div>
+					<p>
+					${movie.synopsis}
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>`;
     // }
 
