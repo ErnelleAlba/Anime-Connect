@@ -18,7 +18,7 @@ fetch('https://api.jikan.moe/v4/anime?sfw&status=airing&order_by=rank&order_by=p
             ${anime.title}
           </div>
           <div class="number">${num}</div>
-          <a href="#">
+          <a href="./detail.html?id=${anime.mal_id}&title=${anime.title}">
             <img src="${anime.images.webp.large_image_url}" id="swiper-img">
           </a>
           `;

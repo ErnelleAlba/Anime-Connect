@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- BOOTSTRAP 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- SWIPER -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+  <!-- STYLE CSS -->
+  <link rel="stylesheet" href="./style.css">
+  <title>AnimeConnect</title>
+</head>
+<body>
+<!--------- HEADER --------->
+  <header class="d-flex justify-content-start" id="header-detail-page">
+    <!-- SIDEBAR NAVIGATION MENU -->
+    <div class="navigation-menu">
+      <!-- BURGER MENU ICON -->
+      <div id="sidebar-icon" class="px-lg-5" onclick="scrollToTopMenu()">
+        <button class="burger-menu" id="menu">
+          <span id="top-line"></span>
+          <span id="mid-line"></span>
+          <span id="bot-line"></span>
+        </button>      
+      </div>
+      <!-- SIDEBAR MENU -->
+      <nav class="sidebar-menu">
+        <div id="sidebar">
+          <h1 id="sidebar-header">Menu</h1>
+          <ul class="list-unstyled">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Anime List</a></li>
+            <li><a href="#">Most Popular</a></li>
+            <li><a href="#">Most Trending</a></li>
+            <li><a href="#">Release Schedule</a></li>
+          </ul>
+        </div>               
+      </nav>
+      <!-- BACKGROUND BLUR -->
+      <div class="blur-bg"></div>   
+    </div>
+
+    <!-- WEBSITE LOGO -->
+    <div>
+      <a href="./index.html" class="navbar-brand me-5" id="website-logo">
+        <img src="./multimedia/anime-connect-logo.png" alt="AnimeConnect-logo">
+      </a>  
+    </div>        
+    <!-- SEARCH BAR -->
+    <div class="bg-light d-none d-xl-block" id="search-content">
+      <form action="/search" class="d-flex">
+        <input class="form-control search-input" type="search" id="search-bar" placeholder="Search anime..." aria-label="Search">
+        <button type="submit" class="btn btn-light" id="search-icon-btn"><i class="fa-solid fa-magnifying-glass text-dark"></i></button>
+        <a href="#anime-list-page" class="text-uppercase text-light text-decoration-none" id="filter-btn">Filter</a>
+      </form>
+    </div>
+    <!-- SEARCH BAR FOR MOBILE VIEW -->
+    <div>
+      <button  class="search-logo" ><i class="fa-solid fa-magnifying-glass fa-xl"></i></button>      
+    </div>
+    <div class="search-bar-mobile">
+      <form action="/search" class="d-flex">
+        <input class="form-control search-input" type="search" id="search-bar" placeholder="Search anime..." aria-label="Search">
+        <button type="submit" class="btn btn-light" id="search-icon-btn"><i class="fa-solid fa-magnifying-glass text-dark"></i></button>
+        <a href="#anime-list-page" class="text-uppercase text-light text-decoration-none" id="filter-btn">Filter</a>
+      </form>
+    </div>
+  </header>
+
+<!--------- MAIN --------->
+  <main>
+    <div class="ani-detail" page-content>
+
+    </div>
+    <div class="d-flex flex-row">
+      <div class="col-8">
+        <h2 id="section-label">Characters</h2>
+        <div class="characters-wrapper ms-4 me-0" char-content>
+        </div>
+      </div>
+      <div class="col-4">
+        <h2 id="section-label">Trailer</h2>
+        <div class="trailer-wrapper" trailer-wrapper>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="mt-5">
+        <h2 id="section-label">Recommended For You</h2>
+      </div>
+      <div  class="recommended-section" recommendation-wrapper>
+
+      </div>
+    </div>
+    
+    <div class="scrollTop" onclick="scrollToTop()"><i class="fa-solid fa-angle-up fa-2xl"></i></div>
+  </main>
+<!--------- FOOTER --------->
+  <footer>
+    <div class="d-flex flex-column align-items-center mt-5 mb-3" id="footer-wrapper">
+      <div>
+        <p>&copy; 2023 AnimeConnect</p>
+      </div>
+      <!-- USED API LINK -->
+      <p class="my-1">Used API: <a href="https://jikan.moe/" class="ms-2" id="api-link" target="_blank">Jikan REST API</a></p>        
+      <!-- DEVELOPER'S NAMES -->
+      <p class="mb-1">Develop by:</p>
+      <div class="d-flex">
+        <p class="my-0 me-3 col-6">John Ernelle Alba</p>
+        <p class="my-0 col-1">|</p> 
+        <p class="my-0 ms-2 col-5">Ederick Bañez</p>
+      </div>
+      <!-- DEVELOPER'S LINKS -->
+      <div class="d-flex mt-2">
+        <div class="me-3 col-6">
+          <a href="https://github.com/ErnelleAlba" id="github-icon" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a>
+          <a href="https://www.linkedin.com/in/john-ernelle-alba-20509527a/" id="linkedin-icon" target="_blank"><i class="fa-brands fa-linkedin fa-xl ms-3"></i></a>
+        </div>
+        <p class="my-0 col-1">|</p> 
+        <div class="ms-3 col-5">
+          <a href="https://github.com/ESBanez" id="github-icon" target="_blank"><i class="fa-brands fa-github fa-xl""></i></a>
+          <a href="" id="linkedin-icon" target="_blank"><i class="fa-brands fa-linkedin fa-xl ms-3"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/animeDetails.js"></script>
+  <!-- HEADER ON SCROLL -->
+  <script src="./js/headerOnScroll.js"></script>
+  <!-- SIDEBAR MENU -->
+  <script src="./js/sidebarMenu.js"></script>
+  <!-- SIDEBAR NAVIGATION MENU -->
+  <script src="./js/burgerBtn.js"></script>
+  <!--SEARCH BAR MOBILE  -->
+  <script src="./js/searchBarOnMobile.js"></script>
+  <!-- SCROLL TO TOP SCRIPT -->
+  <script src="./js/scrollOnTop.js"></script>
+  <!-- BOOTSTRAP 5 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
+</body>
+</html>

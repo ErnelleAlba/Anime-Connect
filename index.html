@@ -19,7 +19,7 @@
     <!-- SIDEBAR NAVIGATION MENU -->
     <div class="navigation-menu">
       <!-- BURGER MENU ICON -->
-      <div id="sidebar-icon" class="px-lg-5" onclick="topFunction()">
+      <div id="sidebar-icon" class="px-lg-5" onclick="scrollToTopMenu()">
         <button class="burger-menu" id="menu">
           <span id="top-line"></span>
           <span id="mid-line"></span>
@@ -108,7 +108,7 @@
               <div id="carousel-description"><span id="synopsis-slide-1"></span></div>
             </div>            
             <div id="carousel-btn">
-              <a href="#" id="detail-btn">Detail<i class="fas fa-angle-right ms-2"></i></a>
+              <a href="#" id="detail-btn" class="detail-btn-1">Detail<i class="fas fa-angle-right ms-2"></i></a>
             </div>
           </div>
         </div>
@@ -132,7 +132,7 @@
               <div id="carousel-description"><span id="synopsis-slide-2"></span></div>
             </div>
             <div id="carousel-btn">
-              <a href="#" id="detail-btn">Detail<i class="fas fa-angle-right ms-2"></i></a>
+              <a href="" id="detail-btn" class="detail-btn-2">Detail<i class="fas fa-angle-right ms-2"></i></a>
             </div>
           </div>
         </div>
@@ -156,7 +156,7 @@
               <div id="carousel-description"><span id="synopsis-slide-3"></span></div>
             </div>
             <div id="carousel-btn">
-              <a href="#" id="detail-btn">Detail<i class="fas fa-angle-right ms-2"></i></a>
+              <a href="" id="detail-btn" class="detail-btn-3">Detail<i class="fas fa-angle-right ms-2"></i></a>
             </div>
           </div>
         </div>
@@ -180,7 +180,7 @@
               <div id="carousel-description"><span id="synopsis-slide-4"></span></div>
             </div>
             <div id="carousel-btn">
-              <a href="#" id="detail-btn">Detail<i class="fas fa-angle-right ms-2"></i></a>
+              <a href="" id="detail-btn" class="detail-btn-4">Detail<i class="fas fa-angle-right ms-2"></i></a>
             </div>
           </div>
         </div>
@@ -204,7 +204,7 @@
               <div id="carousel-description"><span id="synopsis-slide-5"></span></div>
             </div>
             <div id="carousel-btn">
-              <a href="#" id="detail-btn">Detail<i class="fas fa-angle-right ms-2"></i></a>
+              <a href="" id="detail-btn" class="detail-btn-5">Detail<i class="fas fa-angle-right ms-2"></i></a>
             </div>
           </div>
         </div>
@@ -228,7 +228,7 @@
               <div id="carousel-description"><span id="synopsis-slide-6"></span></div>
             </div>
             <div id="carousel-btn">
-              <a href="#" id="detail-btn">Detail<i class="fas fa-angle-right ms-2"></i></a>
+              <a href="" id="detail-btn" class="detail-btn-6">Detail<i class="fas fa-angle-right ms-2"></i></a>
             </div>
           </div>
         </div>
@@ -252,7 +252,7 @@
               <div id="carousel-description"><span id="synopsis-slide-7"></span></div>
             </div>
             <div id="carousel-btn">
-              <a href="#" id="detail-btn">Detail<i class="fas fa-angle-right ms-2"></i></a>
+              <a href="" id="detail-btn" class="detail-btn-7">Detail<i class="fas fa-angle-right ms-2"></i></a>
             </div>
           </div>
         </div>
@@ -276,7 +276,7 @@
               <div id="carousel-description"><span id="synopsis-slide-8"></span></div>
             </div>
             <div id="carousel-btn">
-              <a href="#" id="detail-btn">Detail<i class="fas fa-angle-right ms-2"></i></a>
+              <a href="" id="detail-btn" class="detail-btn-8">Detail<i class="fas fa-angle-right ms-2"></i></a>
             </div>
           </div>
         </div>
@@ -300,7 +300,7 @@
               <div id="carousel-description"><span id="synopsis-slide-9"></span></div>
             </div>
             <div id="carousel-btn">
-              <a href="#" id="detail-btn">Detail<i class="fas fa-angle-right ms-2"></i></a>
+              <a href="" id="detail-btn" class="detail-btn-9">Detail<i class="fas fa-angle-right ms-2"></i></a>
             </div>
           </div>
         </div>
@@ -364,7 +364,6 @@
       </div>
     </div>
   <!-- LATEST ANIME SECTION -->
-   
     <div id="new-anime-section" style="margin-top: 40px;">
       <div class="col-xxl-9 col-lg-9 col-sm-12 d-flex flex-wrap justify-content-between align-items-center ms-xxl-5 ms-lg-5 ps-2 pe-4">
         <h3 class="text-capitalize" id="latest-anime-label">Latest Anime</h3>
@@ -378,17 +377,12 @@
             <h4 class="text-capitalize" id="table-label">Recommended</h4>
             <div>
               <ul class="list-unstyled" id="recommended-list">
-
               </ul>
             </div>
           </div>
         </section>
       </div>
     </div>
-
-    
-    
-
   <!-- UPCOMING ANIME SECTION -->
     <div id="upcoming-anime-section" style="margin-top: 40px;">
       <div class="col-xxl-9 col-lg-9 col-sm-12 d-flex flex-wrap justify-content-between align-items-center mx-xxl-5 mx-lg-5 ps-2 pe-4">
@@ -399,6 +393,7 @@
       </div>
     </div>
 
+    <div class="scrollTop" onclick="scrollToTop()"><i class="fa-solid fa-angle-up fa-2xl"></i></div>
   </main>
 <!--------- FOOTER --------->
   <footer>

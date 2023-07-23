@@ -10,6 +10,8 @@ fetch('https://api.jikan.moe/v4/seasons/now?sfw')
   document.getElementById('duration-slide-1').textContent = `${carouselData[0].duration.split("per")[0]}`;
   document.getElementById('aired-date-slide-1').textContent = `${carouselData[0].aired.string.split("to")[0]}`;
   document.getElementById('synopsis-slide-1').textContent = `${carouselData[0].synopsis}`;
+  // document.getElementsByClassName('detail-btn-1').href = `./detail.html?id=${carouselData[0].mal_id}&title=${carouselData[0].title_english}`
+
   // SLIDE 2
   document.getElementById('img-slide-2').src = `${carouselData[1].images.webp.large_image_url}`;
   document.getElementById('img-slide-2-s').src = `${carouselData[1].images.webp.large_image_url}`;

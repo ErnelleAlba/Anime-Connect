@@ -15,11 +15,11 @@ function lazyLoad () {
       mostPopularItem.classList.add('d-flex','table-item'); 
       mostPopularItem.innerHTML = `
               <div class="my-auto me-4" id="table-number">0${num}</div>
-              <a href="#">
-                <img src="${mostPopAnime.images.jpg.image_url}" id="small-poster-img"/>
+              <a href="./detail.html?id=${mostPopAnime.mal_id}&title=${mostPopAnime.title}">
+                <img src="${mostPopAnime.images.jpg.image_url}" id="small-poster-img" alt="${mostPopAnime.title}"/>
               </a>
               <div class="d-flex flex-column my-auto ms-3">
-                <div><a href="#" id="table-anime-title">${mostPopAnime.title}</a></div>
+                <div><a href="./detail.html?id=${mostPopAnime.mal_id}&title=${mostPopAnime.title}" id="table-anime-title">${mostPopAnime.title}</a></div>
                 <div class="d-flex align-content-start gap-1 mt-1" >
                   <div id="table-details">${mostPopAnime.type}</div>
                   <div class="dot"></div>
