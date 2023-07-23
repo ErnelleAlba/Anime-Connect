@@ -121,6 +121,9 @@ header > div {
 }
 #dropsdown {
   border-radius: 10px;
+  background-color: rgb(58, 58, 62);
+  height: auto;
+  padding: 1rem;
 }
 #sortHome {
   background-color: transparent;
@@ -138,13 +141,47 @@ header > div {
   margin-left: 3.2rem;
 }
 
-/******C A R D********/
-@media screen and (max-width: 600px) {
+/******Phones********/
+@media screen and (max-width: 450px) {
   #content {
     display: flex;
+    justify-content: center;
+  }
+
+  #dropsdown {
+    display: flex;
+    width: "";
+    justify-content: center;
+    align-items: center;
+  }
+  #filterbot {
+    padding: 0;
+  }
+  #types {
+    justify-content: center;
+  }
+  #ratingss {
+    justify-content: center;
+  }
+  #statuss {
+    justify-content: center;
+  }
+  #orders {
+    justify-content: center;
+  }
+}
+/******Laptop********/
+
+@media screen and (min-width: 451px) {
+  #filterbot {
+    margin-right: 100rem;
+    display: grid;
+    border-radius: 15%;
+    padding: 1.5rem;
   }
 }
 
+/******C A R D********/
 .result {
   display: flex;
   flex-wrap: wrap;
@@ -368,6 +405,8 @@ footer {
   letter-spacing: 1px;
   margin: 0px;
   height: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .card p {
   line-height: 24px;

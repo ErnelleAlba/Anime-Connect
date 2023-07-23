@@ -56,9 +56,9 @@
       </div>
       <!------------------- Drop down filter -------------->
       <div class="d-flex justify-content-center">
-        <div class="col-12" style="background-color: rgb(58, 58, 62); height: auto; padding: 1rem;" id="dropsdown">
+        <div class="col-12" id="dropsdown">
             <div class="row">
-              <div class="dropdown dropdown-menu-end col-sm-12 col-md-2 d-flex justify-content-sm-center">
+              <div class="dropdown dropdown-menu-end col-sm-12 col-md-2 d-flex justify-content-sm-center" id="types">
                 <select class="btn btn-outline-light dropdown-toggle" id="type">
                   <option class="dropdown-item" value="tv">Tv</option>
                   <option class="dropdown-item" value="movie">Movie</option>
@@ -68,7 +68,7 @@
                   <option class="dropdown-item" value="music">Music</option>
                 </select>
               </div>
-              <div class="dropdown dropdown-menu-end col-sm-12 col-md-3 d-flex justify-content-sm-center">
+              <div class="dropdown dropdown-menu-end col-sm-12 col-md-3 d-flex justify-content-sm-center"  id="statuss">
                 <select class="btn btn-outline-light dropdown-toggle" id="status">
                   <option class="dropdown-item" value="airing">Airing</option>
                   <option class="dropdown-item" value="complete">Complete</option>
@@ -76,7 +76,7 @@
                 </select>
               </div>
 
-              <div class="dropdown dropdown-menu-end col-sm-12 col-md-4 d-flex justify-content-sm-center">
+              <div class="dropdown dropdown-menu-end col-sm-12 col-md-4 d-flex justify-content-sm-center" id="ratingss">
                 <select class="btn btn-outline-light dropdown-toggle" id="ratings">
                   <option class="dropdown-item" value="g">All Ages</option>
                   <option class="dropdown-item" value="pg">Parental Guidance</option>
@@ -87,7 +87,7 @@
                 </select>
               </div>
 
-              <div class="dropdown dropdown-menu-end col-sm-12 col-md-3 d-flex justify-content-sm-center">
+              <div class="dropdown dropdown-menu-end col-sm-12 col-md-3 d-flex justify-content-sm-center" id="orders">
                 <select class="btn btn-outline-light dropdown-toggle" id="order">
                   <option class="dropdown-item" value="asc">Ascending</option>
                   <option class="dropdown-item" value="desc">Descending</option>
@@ -96,7 +96,7 @@
               </div>
             </div>
             <br>
-            <div class="container d-flex flex-row-reverse ">
+            <div class="container" id="filterbot">
               <button type="submit" id="filter" class="btn btn-outline-light">Filter</button>
             </div>
           </div>
