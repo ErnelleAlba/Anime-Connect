@@ -90,7 +90,7 @@ form.addEventListener("submit", (e) => {
 
   const searchTerm = search.value;
   if (searchTerm) {
-    getMovies(SEARCHAPI + searchTerm + "&limit=30");
+    getMovies(SEARCHAPI + searchTerm + "&limit=20");
 
     search.value = "";
   }
