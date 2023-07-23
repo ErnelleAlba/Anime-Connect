@@ -15,37 +15,11 @@
 </head>
 <body>
 <!--------- HEADER --------->
-<<<<<<< HEAD
-  <header class="d-flex justify-content-start">
-    <!-- SIDEBAR NAVIGATION MENU -->
-    <div class="navigation-menu">
-      <!-- BURGER MENU ICON -->
-      <div id="sidebar-icon" class="px-lg-5" onclick="scrollToTopMenu()">
-        <button class="burger-menu" id="menu">
-          <span id="top-line"></span>
-          <span id="mid-line"></span>
-          <span id="bot-line"></span>
-        </button>      
-      </div>
-      <!-- SIDEBAR MENU -->
-      <nav class="sidebar-menu">
-        <div id="sidebar">
-          <h1 id="sidebar-header">Menu</h1>
-          <ul class="list-unstyled">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Anime List</a></li>
-            <li><a href="#">Most Popular</a></li>
-            <li><a href="#">Most Trending</a></li>
-            <li><a href="#">Release Schedule</a></li>
-          </ul>
-        </div>               
-      </nav>
-=======
-<header class="d-flex justify-content-start">
+<header class="d-flex justify-content-start" id="header-detail-page">
   <!-- SIDEBAR NAVIGATION MENU -->
   <div class="navigation-menu">
     <!-- BURGER MENU ICON -->
-    <div id="sidebar-icon" class="px-lg-5" onclick="topFunction()">
+    <div id="sidebar-icon" class="px-lg-5" onclick="scrollToTopMenu()">
       <button class="burger-menu" id="menu">
         <span id="top-line"></span>
         <span id="mid-line"></span>
@@ -65,37 +39,36 @@
         </ul>
       </div>               
     </nav>
->>>>>>> 2f4270fb32188160552fc8e6934271d51b844691
-      <!-- BACKGROUND BLUR -->
-      <div class="blur-bg"></div>   
-    </div>
+    <!-- BACKGROUND BLUR -->
+    <div class="blur-bg"></div>   
+  </div>
 
-    <!-- WEBSITE LOGO -->
-    <div>
-      <a href="./index.html" class="navbar-brand me-5" id="website-logo">
-        <img src="./multimedia/anime-connect-logo.png" alt="AnimeConnect-logo">
-      </a>  
-    </div>        
-    <!-- SEARCH BAR -->
-    <div class="bg-light d-none d-xl-block" id="search-content">
-      <form action="/search" class="d-flex">
-        <input class="form-control search-input" type="search" id="search-bar" placeholder="Search anime..." aria-label="Search">
-        <button type="submit" class="btn btn-light" id="search-icon-btn"><i class="fa-solid fa-magnifying-glass text-dark"></i></button>
-        <a href="#anime-list-page" class="text-uppercase text-light text-decoration-none" id="filter-btn">Filter</a>
-      </form>
-    </div>
-    <!-- SEARCH BAR FOR MOBILE VIEW -->
-    <div>
-      <button  class="search-logo" ><i class="fa-solid fa-magnifying-glass fa-xl"></i></button>      
-    </div>
-    <div class="search-bar-mobile">
-      <form action="/search" class="d-flex">
-        <input class="form-control search-input" type="search" id="search-bar" placeholder="Search anime..." aria-label="Search">
-        <button type="submit" class="btn btn-light" id="search-icon-btn"><i class="fa-solid fa-magnifying-glass text-dark"></i></button>
-        <a href="#anime-list-page" class="text-uppercase text-light text-decoration-none" id="filter-btn">Filter</a>
-      </form>
-    </div>
-  </header>
+  <!-- WEBSITE LOGO -->
+  <div>
+    <a href="./index.html" class="navbar-brand me-5" id="website-logo">
+      <img src="./multimedia/anime-connect-logo.png" alt="AnimeConnect-logo">
+    </a>  
+  </div>        
+  <!-- SEARCH BAR -->
+  <div class="bg-light d-none d-xl-block" id="search-content">
+    <form action="/search" class="d-flex">
+      <input class="form-control search-input" type="search" id="search-bar" placeholder="Search anime..." aria-label="Search">
+      <button type="submit" class="btn btn-light" id="search-icon-btn"><i class="fa-solid fa-magnifying-glass text-dark"></i></button>
+      <a href="#anime-list-page" class="text-uppercase text-light text-decoration-none" id="filter-btn">Filter</a>
+    </form>
+  </div>
+  <!-- SEARCH BAR FOR MOBILE VIEW -->
+  <div>
+    <button  class="search-logo" ><i class="fa-solid fa-magnifying-glass fa-xl"></i></button>      
+  </div>
+  <div class="search-bar-mobile">
+    <form action="/search" class="d-flex">
+      <input class="form-control search-input" type="search" id="search-bar" placeholder="Search anime..." aria-label="Search">
+      <button type="submit" class="btn btn-light" id="search-icon-btn"><i class="fa-solid fa-magnifying-glass text-dark"></i></button>
+      <a href="#anime-list-page" class="text-uppercase text-light text-decoration-none" id="filter-btn">Filter</a>
+    </form>
+  </div>
+</header>
 
 <!--------- MAIN --------->
   <main>
@@ -480,8 +453,6 @@
   <script src="./js/latestAnime.js"></script>
   <!-- UPCOMING ANIME SECTION -->
   <script src="./js/upcomingAnime.js"></script>
-  <!-- RECOMMENDED LIST -->
-  <script src="./js/recommendedList.js"></script>
   <!-- SCROLL TO TOP SCRIPT -->
   <script src="./js/scrollOnTop.js"></script>
   <!-- BOOTSTRAP 5 -->
