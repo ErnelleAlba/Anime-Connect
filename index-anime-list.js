@@ -16,6 +16,7 @@ const main = document.getElementById("content");
 const form = document.getElementById("form");
 const search = document.getElementById("search");
 const result = document.getElementById("result");
+const year = document.getElementById("year");
 
 getMovies(APIURL);
 
@@ -36,18 +37,30 @@ function showMovies(movies) {
     movieEl.classList.add("movie");
 
     movieEl.innerHTML = `<div class="card">
-		  <img src="${movie.images.jpg.image_url}" alt="" class="card-img-top">
-		  <div class="card-body">
-			<h5 class="card-title">${movie.title_english}</h5>
-			<!-- Add other anime information you want to display here -->
-			<h6 class="Ratings">
-				Ratings: ${movie.score}
-			  <ul>
-				  <li>${movie.year}</li>
-			  </ul>
-			</h6>
-		  </div>
-		</div>`;
+	<div class="card-body">
+	<div>
+		<img src="${movie.images.jpg.image_url}" alt="" class="card-img-top">
+	</div>
+	<div class="detail">
+		
+		<div class="description">
+			  <h5>${movie.title}</h5>
+			<span class="fdi-item">Movie</span>
+			<span class="dot"></span>
+			<span class="fdi-item fdi-duration">90m</span>
+	
+		   </div>
+	  </div>
+			  <div class="descriptions">
+				<div class="ellipsis">
+				  <p>
+				  ${movie.synopsis}
+				  </p>
+				  
+			  </div>
+			  </div>
+</div>
+</div>`;
     // }
 
     main.appendChild(movieEl);
