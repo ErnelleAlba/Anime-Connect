@@ -21,6 +21,25 @@
   font-family: "Poppins", sans-serif;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--bg-gray);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--tc-yellow);
+}
 body {
   position: relative;
   background: #242428;
