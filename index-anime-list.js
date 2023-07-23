@@ -22,7 +22,6 @@ getMovies(APIURL);
 async function getMovies(url) {
   const resp = await fetch(url);
   const respData = await resp.json();
-
   showMovies(respData.data);
 }
 
@@ -59,12 +58,10 @@ function showMovies(movies) {
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-
   const searchTerm = search.value;
 
   if (searchTerm) {
     getMovies(SEARCHAPI + searchTerm + "&limit=20");
-
     search.value = "";
   }
 });
