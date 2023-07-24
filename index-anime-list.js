@@ -39,10 +39,14 @@ function showMovies(movies) {
     const score = parseFloat(movie.score);
     const roundedScore = Math.round(score);
 
-    movieEl.innerHTML = `<div class="card">
+    movieEl.innerHTML = `
+    <a href="./detail.html?id=${movie.mal_id}&title=${movie.title}">
+    <div class="card">
   <div class="card-body">
     <div>
-    <img src="${movie.images.jpg.image_url}" alt="" class="card-img-top">
+    
+      <img src="${movie.images.jpg.image_url}" alt="" class="card-img-top">
+    
     </div>
     <div class="detail">
       <div class="description">
@@ -75,7 +79,9 @@ function showMovies(movies) {
       </div>
     </div>
   </div>
-</div>`;
+</div>
+</a>`;
+
     // }
 
     main.appendChild(movieEl);

@@ -16,7 +16,7 @@ fetch('https://api.jikan.moe/v4/anime?sfw&status=airing&order_by=popularity&sort
                 <img src="${anime.images.jpg.image_url}" id="small-poster-img" alt="${anime.title}"/>
               </a>
               <div class="d-flex flex-column my-auto ms-3">
-                <div><a href="./detail.html?id=${anime.mal_id}&title=${anime.title}" id="table-anime-title">${anime.title_english}</a></div>
+                <div><a href="./detail.html?id=${anime.mal_id}&title=${anime.title}" id="table-anime-title">${anime.title}</a></div>
                 <div class="d-flex align-content-start gap-1 mt-1" >
                   <div id="table-details">${anime.type}</div>
                   <div class="dot"></div>
